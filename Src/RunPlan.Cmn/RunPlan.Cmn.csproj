@@ -108,52 +108,50 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\AsLink\MVVM\RelayCommandEx.UWP.cs">
-      <Link>Mvvm\RelayCommandEx.UWP.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\AsLink\MVVM\ViewModelBase.UWP.cs">
-      <Link>Mvvm\ViewModelBase.UWP.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\AsLink\PlatformNeutral\EnvCanRadarUrlHelper.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\PlatformNeutral\EnvCanRadarUrlHelper.cs">
       <Link>AsLink\EnvCanRadarUrlHelper.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\AsLink\PlatformNeutral\JsonHelper.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\PlatformNeutral\JsonHelper.cs">
       <Link>AsLink\JsonHelper.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\AsLink\UWP\AppSettingsHelper.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\AppSettingsHelper.cs">
       <Link>AsLink\AppSettingsHelper.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\aslink\uwp\Connectivity.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\Connectivity.cs">
       <Link>AsLink\Connectivity.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\aslink\uwp\DevOp.uwp.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\DevOp.uwp.cs">
       <Link>AsLink\DevOp.uwp.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\AsLink\UWP\SerialHelper.uwp.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\RelayCommandEx.UWP.cs">
+      <Link>Mvvm\RelayCommandEx.UWP.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\SerialHelper.uwp.cs">
       <Link>AsLink\SerialHelper.uwp.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\AsLink\UWP\WebCacheHelper.UWL.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\ViewModelBase.UWP.cs">
+      <Link>Mvvm\ViewModelBase.UWP.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\WebCacheHelper.UWL.cs">
       <Link>AsLink\WebCacheHelper.UWL.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\AsLink\UWP\WebHelper.uwp.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\WebHelper.uwp.cs">
       <Link>AsLink\WebHelper.uwp.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\AsLink\UWP\WinTileHelper.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\UWP\WinTileHelper.cs">
       <Link>AsLink\WinTileHelper.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\AsLink\WebSvcTypes\SiteDataConversionExt.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\WebSvcTypes\SiteDataConversionExt.cs">
       <Link>WebSvcTypes\SiteDataConversionExt.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\aslink\websvctypes\xsd.cls.site.cs">
+    <Compile Include="..\..\..\AAV.Shared\Src\AsLink\WebSvcTypes\xsd.cls.site.cs">
       <Link>WebSvcTypes\xsd.cls.site.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Live\GpsFit\GpsFitCentral\HalHigdon_Nov2.cs">
-      <Link>AsLink\HalHigdon_Nov2.cs</Link>
     </Compile>
     <Compile Include="AsLink\EnvNormals.cs" />
     <Compile Include="Assets\on-64_e.cs" />
     <Compile Include="Assets\s0000458_e.cs" />
     <Compile Include="Assets\normals-6158733-1981-2010.cs" />
+    <Compile Include="Misc\HalHigdon_Nov2.cs" />
     <Compile Include="Misc\IRefreshable.cs" />
     <Compile Include="Misc\MiscUnsorted.cs" />
     <Compile Include="Model\EnvtCanDto.cs" />
