@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="ToRunOr.Vws.UCs.UcEnvtCanHtml_PastFore24Hr_NonMvvm" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:ToRunOr.Vws.UCs" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+						 d:DesignHeight="1440" d:DesignWidth="2310" x:Name="uc" Margin="0">
+  <Grid              Height="1440"         Width="2310" Background="#5000">
+    <VisualStateManager.VisualStateGroups>
+      <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+        <VisualState    x:Name="VisualStateNarrow3">
+          <VisualState.StateTriggers>
+            <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+          </VisualState.StateTriggers>
+        </VisualState>
+        <VisualState    x:Name="VisualStateNormal3">
+          <VisualState.StateTriggers>
+            <AdaptiveTrigger MinWindowWidth="{StaticResource Wide__MinWidth}" />
+          </VisualState.StateTriggers>
+          <VisualState.Setters>
+            <Setter Target="sg1.Background"								Value="#040201" />
+          </VisualState.Setters>
+        </VisualState>
+
+      </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="160" />
+      <ColumnDefinition Width="*"   />
+      <ColumnDefinition Width="160" />
+    </Grid.ColumnDefinitions>
+    <!--<Grid.Background>
+      <SolidColorBrush Color="#5000" />
+      -->
+    <!--<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">        <GradientStop Color="#5000" Offset="0.0"/>        <GradientStop Color="#5000" Offset="0.054"/>        <GradientStop Color="#4000" Offset="0.055"/>        <GradientStop Color="#4000" Offset="1.0"/>      </LinearGradientBrush>-->
+    <!--
+    </Grid.Background>
+    -->
+
+    <ScrollViewer   x:Name="scrlVwr" Grid.ColumnSpan="3" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" PointerWheelChanged="OnWheel"  >
+      <Grid         x:Name="sg1" Height="1440" Width="4500" >
+        <Rectangle  Fill="#Bfff" VerticalAlignment="Bottom" Height="233" Margin="1733,0,0,0" Width="1246" HorizontalAlignment="Left"/>
+        <Canvas     x:Name="canvasChart" Background="Transparent" />
+      </Grid>
+    </ScrollViewer>
+
+    <Canvas    Grid.Column="0" x:Name="gChart0" />
+    <Canvas    Grid.Column="2" x:Name="gChart5" />
+  </Grid>
+</UserControl>

@@ -1,0 +1,100 @@
+﻿<Page x:Class="ToRunOr.ZoomPanels" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			xmlns:local="using:ToRunOr"
+			xmlns:UCs="using:ToRunOr.Vws.UCs" mc:Ignorable="d" x:Name="mw1"
+			>
+
+	<Page.Resources>
+		<Style TargetType="AppBarToggleButton">
+			<Setter Property="Margin"       Value="0" />
+			<Setter Property="Foreground"   Value="#888"        />
+			<Setter Property="Background"   Value="Transparent" 	 />
+			<Setter Property="Opacity"      Value=".2" 						 />
+			<!--
+			<Setter Property="HorizontalAlignment"       Value="Stretch" 						 />
+			<Setter Property="VerticalAlignment"         Value="Stretch" 						 />
+			nogo here <Setter Property="Icon"         Value="Accept" />-->
+		</Style>
+
+	</Page.Resources>
+	<!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+	<Grid Background="#aaa" x:Name="panel4lockscreen">
+		<TextBlock x:Name="tbVer" Foreground="#00f" HorizontalAlignment="Right" Margin="0" Text="Ver" VerticalAlignment="Top" FontSize="11" />
+
+		<!--<UCs:ucRadarMap />-->
+		<Grid Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Left"   VerticalAlignment="Bottom" >
+			<UCs:ucRadar />
+			<AppBarToggleButton Icon="ZoomIn" HorizontalAlignment="Left"   VerticalAlignment="Bottom" Checked="onMax"  Unchecked="onMin" IsChecked="True" x:Name="abtb1"/>
+		</Grid>
+
+		<Grid Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Left"   VerticalAlignment="Top"    >
+			<Viewbox VerticalAlignment="Top" >
+				<UCs:ucEnvtCanXml_CurConAirT />
+			</Viewbox>
+			<AppBarToggleButton Icon="ZoomIn" HorizontalAlignment="Left"   VerticalAlignment="Top"    Checked="onMax"  Unchecked="onMin" />
+		</Grid>
+
+		<Grid Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Center" VerticalAlignment="Top"    >
+			<Viewbox VerticalAlignment="Top" >
+				<UCs:UcEnvtCanHtml_PastFore24Hr_NonMvvm />
+			</Viewbox>
+			<AppBarToggleButton Icon="ZoomIn" HorizontalAlignment="Center" VerticalAlignment="Top"    Checked="onMax"  Unchecked="onMin" />
+		</Grid>
+
+		<Grid Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Right"  VerticalAlignment="Top"    >
+			<Viewbox >
+				<UCs:UcEnvtCanXml_CurConWind />
+			</Viewbox>
+			<AppBarToggleButton Icon="ZoomIn" HorizontalAlignment="Right"  VerticalAlignment="Top"    Checked="onMax"  Unchecked="onMin" />
+		</Grid>
+
+		<Grid Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Center" VerticalAlignment="Bottom" >
+			<Viewbox VerticalAlignment="Bottom">
+				<UCs:UcEnvtCanHtml_PastFore24Hr_NonMvvm />
+				<!--<UCs:ucRunPrgsPlan />-->
+			</Viewbox>
+			<AppBarToggleButton Icon="ZoomIn" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="onMax"  Unchecked="onMin" />
+		</Grid>
+
+		<Grid Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Right"  VerticalAlignment="Bottom" >
+			<Viewbox >
+				<UCs:ucAnalogClock />
+			</Viewbox>
+			<AppBarToggleButton Icon="ZoomIn" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Checked="onMax"  Unchecked="onMin" />
+		</Grid>
+
+
+		<AppBarButton HorizontalAlignment="Left" VerticalAlignment="Center" IsCompact="False" Icon="More"   x:Name="Play5"  Background="#4040" Foreground="#f0f0"          >
+			<Button.Flyout>
+				<MenuFlyout>
+					<ToggleMenuFlyoutItem Text="Start Tracking"        Command="{Binding StartVehTrackngCmd}"  IsChecked="{Binding IsVehTracngVw,  Mode=TwoWay}" ToolTipService.ToolTip="Start Vehicle Tracking"  />
+					<MenuFlyoutSeparator  />
+					<ToggleMenuFlyoutItem Text="Privacy Policy..."     IsChecked="{Binding IsPrivacyPlcVw,  Mode=TwoWay}" ToolTipService.ToolTip="Show Privacy Policy" Foreground="#090" />
+
+					<MenuFlyoutSubItem    Text="Privacy Policy... DevDbg" Visibility="{Binding DevDbgViz}" >
+						<MenuFlyoutSubItem.Items>
+							<MenuFlyoutSubItem >
+								<MenuFlyoutSubItem.Text>Your privacy is important to us. This application uses your current location to center the latest Doppler radar image of the atmospheric precipitation. This may be stored to conserve battery power. At any time, you may disable Location Services and enter your location manually. In fact, the most optimal way is to get the location once and update it only as needed. If you have any questions, contact me at alex.pigida@live.com.</MenuFlyoutSubItem.Text>
+							</MenuFlyoutSubItem>
+						</MenuFlyoutSubItem.Items>
+					</MenuFlyoutSubItem>
+
+					<MenuFlyoutSubItem Text="Future Features..." Visibility="{Binding DevDbgViz}" >
+						<MenuFlyoutSubItem.Items>
+							<ToggleMenuFlyoutItem Text="Lock Orientation"      IsChecked="{Binding IsRouteListVw, Mode=TwoWay}"  ToolTipService.ToolTip="Lock Orientation"   Visibility="{Binding DevDbgViz}" />
+							<ToggleMenuFlyoutItem Text="Autozoom"              IsChecked="{Binding IsOn01, Mode=TwoWay}" Visibility="{Binding DevDbgViz}" ToolTipService.ToolTip="Auto zoom to show the nearest bus." />
+							<ToggleMenuFlyoutItem Text="Multi Stop Mode"       IsChecked="{Binding IsOn02, Mode=TwoWay}" Visibility="{Binding DevDbgViz}" ToolTipService.ToolTip="Include all favorite stops in 2km radius" />
+							<ToggleMenuFlyoutItem Text="Audio"                 IsChecked="{Binding IsVrbl, Mode=TwoWay}" Visibility="{Binding DevDbgViz}" ToolTipService.ToolTip="Toggle Audio (On/Off)" />
+							<ToggleMenuFlyoutItem Text="All or Predicted"      IsChecked="{Binding IsAll, Mode=TwoWay}"  Visibility="{Binding DevDbgViz}" ToolTipService.ToolTip="Display All vs. Predicted only vehicles on the route." />
+						</MenuFlyoutSubItem.Items>
+					</MenuFlyoutSubItem>
+					<MenuFlyoutSeparator                                                                         Visibility="{Binding DevDbgViz}" />
+					<ToggleMenuFlyoutItem Text="DevOps"                IsChecked="{Binding IsOn00, Mode=TwoWay}" Visibility="{Binding DevDbgViz}" ToolTipService.ToolTip="Dev Ops visbility switch." />
+					<MenuFlyoutSeparator                                                                         Visibility="{Binding DevDbgViz}" />
+				</MenuFlyout>
+
+			</Button.Flyout>
+		</AppBarButton>
+
+	</Grid>
+</Page>

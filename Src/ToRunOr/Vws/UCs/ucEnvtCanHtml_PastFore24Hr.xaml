@@ -1,0 +1,6 @@
+﻿<UserControl x:Class="ToRunOr.Vws.UCs.ucEnvtCanHtml_PastFore24Hr" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:ToRunOr.Vws.UCs" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+						 d:DesignHeight="1440" d:DesignWidth="2460" x:Name="uc">
+	<Grid Height="1440" Width="2460" Background="#8def">
+		<Canvas x:Name="gChart" />
+	</Grid>
+</UserControl>

@@ -1,0 +1,51 @@
+﻿<Application x:Class="ToRunOr.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:ToRunOr" 
+             RequestedTheme="Light">
+    <Application.Resources>
+        <!--
+    BTW: screenshots dimentions are: 2560x1440
+    <x:Double x:Key="Wide__MinWidth">521</x:Double>
+    <x:Double x:Key="Wide__MinWidth">960</x:Double>
+    555: makes balck bkgrnd showing on the removal of start bar!
+    -->
+        <x:Double x:Key="NarrowMinWidth">0</x:Double>
+        <x:Double x:Key="MinSizeWH">120</x:Double>
+        <x:Double x:Key="Wide__MinWidth">1600</x:Double> <!--655 dark without the base bar-->
+        <x:Double x:Key="WidestMinWidth">1200</x:Double>
+
+        <LinearGradientBrush x:Key="ThermoScaleGradientBrush" EndPoint="1,0.5" StartPoint="0,0.5">
+            <GradientStop Color="#00f" Offset="0"/>
+            <GradientStop Color="#ffb" Offset=".5"/>
+            <GradientStop Color="#f00" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ThermoScaleGradientBrushV" EndPoint="0.5,0" StartPoint="0.5,1">
+            <GradientStop Color="#00f" Offset="0"/>
+            <GradientStop Color="#eeb" Offset=".5"/>
+            <GradientStop Color="#f00" Offset="1"/>
+        </LinearGradientBrush>
+
+        <!--1e90ff-->
+        <SolidColorBrush x:Key="WindBaseBrush" Color="DodgerBlue" />
+        <SolidColorBrush x:Key="WindBrushDk1"  Color="#1b81e5" />
+        <SolidColorBrush x:Key="WindBrushDk2"  Color="#1873cc" />
+        <SolidColorBrush x:Key="WindBrushDk3"  Color="#1564b2" />
+        <SolidColorBrush x:Key="WindBrushDk4"  Color="#125699" />
+        <SolidColorBrush x:Key="WindBrushDk5"  Color="#0f487f" />
+        <SolidColorBrush x:Key="WindBrushDk6"  Color="#0c3966" />
+        <SolidColorBrush x:Key="WindBrushDk7"  Color="#092b4c" />
+        <SolidColorBrush x:Key="WindBrushDk8"  Color="#061c33" />
+        <SolidColorBrush x:Key="WindBrushDk9"  Color="#030e19" />
+
+        <SolidColorBrush x:Key="WindBrushLt1"  Color="#349bff" />
+        <SolidColorBrush x:Key="WindBrushLt2"  Color="#4aa6ff" />
+        <SolidColorBrush x:Key="WindBrushLt3"  Color="#61b1ff" />
+        <SolidColorBrush x:Key="WindBrushLt4"  Color="#78bcff" />
+        <SolidColorBrush x:Key="WindBrushLt5"  Color="#8ec7ff" />
+        <SolidColorBrush x:Key="WindBrushLt6"  Color="#a5d2ff" />
+        <SolidColorBrush x:Key="WindBrushLt7"  Color="#bbddff" />
+        <SolidColorBrush x:Key="WindBrushLt8"  Color="#d2e8ff" />
+        <SolidColorBrush x:Key="WindBrushLt9"  Color="#e8f3ff" />
+        <SolidColorBrush x:Key="WindBrushLtA"  Color="#f3faff" />
+
+    </Application.Resources>
+</Application>

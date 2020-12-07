@@ -1,0 +1,1222 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<om:ObservationCollection xmlns:xsi="http://w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns="http://dms.ec.gc.ca/schema/point-observation/2.0" xmlns:om="http://www.opengis.net/om/1.0">
+ <om:member>
+ <om:Observation>
+<!--Climate Normals 1981-2010 Station Data-->
+<om:metadata>
+<set>
+<general> 
+<author name="Normals-Generator" version="1.0"/> 
+<dataset name="Taxonomy"/>
+<phase name="Product"/>
+<id><![CDATA["http://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?stnID=5097&lang=e&prov=ON&provSubmit=go#normals-data"]]></id>
+<lang name="ENG"/>
+</general>
+<identification-elements>
+<element name="date_tm" uom="datetime" value="2016-10-13 20:20:09"/>
+<element name="stn_nam" uom="unitless" value="TORONTO LESTER B. PEARSON INT'L A"/>
+<element name="prov" uom="unitless" value="ON"/>
+<element name="lat" uom="°" value="43.677222"/>
+<element name="long" uom="°" value="-79.630556"/>
+<element name="stn_elev" uom="m" value="173.4"/>
+<element name="clim_id" uom="unitless" value="6158733"/>
+<element name="wmo_id" uom="unitless" value="71624"/>
+<element name="tc_id" uom="unitless" value="YYZ"/>
+<element name="wmo_indicator" uom="unitless" value="* This station meets WMO standards for temperature and precipitation."></element>
+</identification-elements></set></om:metadata> 
+<om:procedure><![CDATA["http://climate.weather.gc.ca/climate_normals/results_1981_2010_e.html?stnID=5097&lang=e&prov=ON&provSubmit=go#station-metadata"]]></om:procedure>
+<om:featureOfInterest><gml:FeatureCollection><gml:location><gml:Point><gml:pos>43.677222 -79.630556</gml:pos></gml:Point></gml:location></gml:FeatureCollection></om:featureOfInterest>
+<om:result><elements>
+<element name="temperature" uom="unitless" value="1">
+<element name="avg_temp_dly_jan" value="-5.5" uom="°C"></element>
+<element name="avg_temp_dly_feb" value="-4.5" uom="°C"></element>
+<element name="avg_temp_dly_mar" value="0.1" uom="°C"></element>
+<element name="avg_temp_dly_apr" value="7.1" uom="°C"></element>
+<element name="avg_temp_dly_may" value="13.1" uom="°C"></element>
+<element name="avg_temp_dly_jun" value="18.6" uom="°C"></element>
+<element name="avg_temp_dly_jul" value="21.5" uom="°C"></element>
+<element name="avg_temp_dly_aug" value="20.6" uom="°C"></element>
+<element name="avg_temp_dly_sep" value="16.2" uom="°C"></element>
+<element name="avg_temp_dly_oct" value="9.5" uom="°C"></element>
+<element name="avg_temp_dly_nov" value="3.7" uom="°C"></element>
+<element name="avg_temp_dly_dec" value="-2.2" uom="°C"></element>
+<element name="avg_temp_dly_yr" value="8.2" uom="°C"></element>
+<element name="avg_temp_dly_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="std_dev_temp_jan" value="3.2" uom="°C"></element>
+<element name="std_dev_temp_feb" value="2.3" uom="°C"></element>
+<element name="std_dev_temp_mar" value="2.0" uom="°C"></element>
+<element name="std_dev_temp_apr" value="1.6" uom="°C"></element>
+<element name="std_dev_temp_may" value="1.9" uom="°C"></element>
+<element name="std_dev_temp_jun" value="1.6" uom="°C"></element>
+<element name="std_dev_temp_jul" value="1.5" uom="°C"></element>
+<element name="std_dev_temp_aug" value="1.5" uom="°C"></element>
+<element name="std_dev_temp_sep" value="1.6" uom="°C"></element>
+<element name="std_dev_temp_oct" value="1.5" uom="°C"></element>
+<element name="std_dev_temp_nov" value="1.5" uom="°C"></element>
+<element name="std_dev_temp_dec" value="2.6" uom="°C"></element>
+<element name="std_dev_temp_yr" value="1.0" uom="°C"></element>
+<element name="std_dev_temp_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="max_temp_dly_jan" value="-1.5" uom="°C"></element>
+<element name="max_temp_dly_feb" value="-0.4" uom="°C"></element>
+<element name="max_temp_dly_mar" value="4.6" uom="°C"></element>
+<element name="max_temp_dly_apr" value="12.2" uom="°C"></element>
+<element name="max_temp_dly_may" value="18.8" uom="°C"></element>
+<element name="max_temp_dly_jun" value="24.2" uom="°C"></element>
+<element name="max_temp_dly_jul" value="27.1" uom="°C"></element>
+<element name="max_temp_dly_aug" value="26.0" uom="°C"></element>
+<element name="max_temp_dly_sep" value="21.6" uom="°C"></element>
+<element name="max_temp_dly_oct" value="14.3" uom="°C"></element>
+<element name="max_temp_dly_nov" value="7.6" uom="°C"></element>
+<element name="max_temp_dly_dec" value="1.4" uom="°C"></element>
+<element name="max_temp_dly_yr" value="13.0" uom="°C"></element>
+<element name="max_temp_dly_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="min_temp_dly_jan" value="-9.4" uom="°C"></element>
+<element name="min_temp_dly_feb" value="-8.7" uom="°C"></element>
+<element name="min_temp_dly_mar" value="-4.5" uom="°C"></element>
+<element name="min_temp_dly_apr" value="1.9" uom="°C"></element>
+<element name="min_temp_dly_may" value="7.4" uom="°C"></element>
+<element name="min_temp_dly_jun" value="13.0" uom="°C"></element>
+<element name="min_temp_dly_jul" value="15.8" uom="°C"></element>
+<element name="min_temp_dly_aug" value="15.1" uom="°C"></element>
+<element name="min_temp_dly_sep" value="10.8" uom="°C"></element>
+<element name="min_temp_dly_oct" value="4.6" uom="°C"></element>
+<element name="min_temp_dly_nov" value="-0.2" uom="°C"></element>
+<element name="min_temp_dly_dec" value="-5.8" uom="°C"></element>
+<element name="min_temp_dly_yr" value="3.3" uom="°C"></element>
+<element name="min_temp_dly_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="extr_max_temp_jan" value="17.6" uom="°C"><qualifier name="date" value="2005/13" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_feb" value="14.9" uom="°C"><qualifier name="date" value="1984/23" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_mar" value="25.6" uom="°C"><qualifier name="date" value="1945/28" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_apr" value="31.1" uom="°C"><qualifier name="date" value="1990/25" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_may" value="34.4" uom="°C"><qualifier name="date" value="1962/16" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_jun" value="36.7" uom="°C"><qualifier name="date" value="1952/25" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_jul" value="37.6" uom="°C"><qualifier name="date" value="1988/07" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_aug" value="38.3" uom="°C"><qualifier name="date" value="1948/25" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_sep" value="36.7" uom="°C"><qualifier name="date" value="1953/02" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_oct" value="31.6" uom="°C"><qualifier name="date" value="2007/08" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_nov" value="25.0" uom="°C"><qualifier name="date" value="1950/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_temp_dec" value="20.0" uom="°C"><qualifier name="date" value="1982/03" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_jan" value="-31.3" uom="°C"><qualifier name="date" value="1981/04" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_feb" value="-31.1" uom="°C"><qualifier name="date" value="1943/15" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_mar" value="-28.9" uom="°C"><qualifier name="date" value="1950/04" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_apr" value="-17.2" uom="°C"><qualifier name="date" value="1972/07" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_may" value="-5.6" uom="°C"><qualifier name="date" value="1966/07" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_jun" value="0.6" uom="°C"><qualifier name="date" value="1949/08" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_jul" value="3.9" uom="°C"><qualifier name="date" value="1968/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_aug" value="1.1" uom="°C"><qualifier name="date" value="1965/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_sep" value="-3.9" uom="°C"><qualifier name="date" value="1965/27" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_oct" value="-8.3" uom="°C"><qualifier name="date" value="1969/23" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_nov" value="-18.3" uom="°C"><qualifier name="date" value="1949/26" format="yyyy/dd"></qualifier></element>
+<element name="extr_min_temp_dec" value="-31.1" uom="°C"><qualifier name="date" value="1942/20" format="yyyy/dd"></qualifier></element>
+</element>
+<element name="precipitation" uom="unitless" value="2">
+<element name="avg_rnfl_jan" value="25.1" uom="mm"></element>
+<element name="avg_rnfl_feb" value="24.3" uom="mm"></element>
+<element name="avg_rnfl_mar" value="32.6" uom="mm"></element>
+<element name="avg_rnfl_apr" value="63.0" uom="mm"></element>
+<element name="avg_rnfl_may" value="74.3" uom="mm"></element>
+<element name="avg_rnfl_jun" value="71.5" uom="mm"></element>
+<element name="avg_rnfl_jul" value="75.7" uom="mm"></element>
+<element name="avg_rnfl_aug" value="78.1" uom="mm"></element>
+<element name="avg_rnfl_sep" value="74.5" uom="mm"></element>
+<element name="avg_rnfl_oct" value="60.6" uom="mm"></element>
+<element name="avg_rnfl_nov" value="68.0" uom="mm"></element>
+<element name="avg_rnfl_dec" value="34.0" uom="mm"></element>
+<element name="avg_rnfl_yr" value="681.6" uom="mm"></element>
+<element name="avg_rnfl_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_snwfl_jan" value="29.5" uom="cm"></element>
+<element name="avg_snwfl_feb" value="24.0" uom="cm"></element>
+<element name="avg_snwfl_mar" value="17.7" uom="cm"></element>
+<element name="avg_snwfl_apr" value="4.5" uom="cm"></element>
+<element name="avg_snwfl_may" value="0.0" uom="cm"></element>
+<element name="avg_snwfl_jun" value="0.0" uom="cm"></element>
+<element name="avg_snwfl_jul" value="0.0" uom="cm"></element>
+<element name="avg_snwfl_aug" value="0.0" uom="cm"></element>
+<element name="avg_snwfl_sep" value="0.0" uom="cm"></element>
+<element name="avg_snwfl_oct" value="0.4" uom="cm"></element>
+<element name="avg_snwfl_nov" value="7.5" uom="cm"></element>
+<element name="avg_snwfl_dec" value="24.9" uom="cm"></element>
+<element name="avg_snwfl_yr" value="108.5" uom="cm"></element>
+<element name="avg_snwfl_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_pcpn_jan" value="51.8" uom="mm"></element>
+<element name="avg_pcpn_feb" value="47.7" uom="mm"></element>
+<element name="avg_pcpn_mar" value="49.8" uom="mm"></element>
+<element name="avg_pcpn_apr" value="68.5" uom="mm"></element>
+<element name="avg_pcpn_may" value="74.3" uom="mm"></element>
+<element name="avg_pcpn_jun" value="71.5" uom="mm"></element>
+<element name="avg_pcpn_jul" value="75.7" uom="mm"></element>
+<element name="avg_pcpn_aug" value="78.1" uom="mm"></element>
+<element name="avg_pcpn_sep" value="74.5" uom="mm"></element>
+<element name="avg_pcpn_oct" value="61.1" uom="mm"></element>
+<element name="avg_pcpn_nov" value="75.1" uom="mm"></element>
+<element name="avg_pcpn_dec" value="57.9" uom="mm"></element>
+<element name="avg_pcpn_yr" value="785.9" uom="mm"></element>
+<element name="avg_pcpn_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_snw_dpth_jan" value="6" uom="cm"></element>
+<element name="avg_snw_dpth_feb" value="7" uom="cm"></element>
+<element name="avg_snw_dpth_mar" value="3" uom="cm"></element>
+<element name="avg_snw_dpth_apr" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_may" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_jun" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_jul" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_aug" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_sep" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_oct" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_nov" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_dec" value="3" uom="cm"></element>
+<element name="avg_snw_dpth_yr" value="2" uom="cm"></element>
+<element name="avg_snw_dpth_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="medn_snw_dpth_jan" value="5" uom="cm"></element>
+<element name="medn_snw_dpth_feb" value="5" uom="cm"></element>
+<element name="medn_snw_dpth_mar" value="2" uom="cm"></element>
+<element name="medn_snw_dpth_apr" value="0" uom="cm"></element>
+<element name="medn_snw_dpth_may" value="0" uom="cm"></element>
+<element name="medn_snw_dpth_jun" value="0" uom="cm"></element>
+<element name="medn_snw_dpth_jul" value="0" uom="cm"></element>
+<element name="medn_snw_dpth_aug" value="0" uom="cm"></element>
+<element name="medn_snw_dpth_sep" value="0" uom="cm"></element>
+<element name="medn_snw_dpth_oct" value="0" uom="cm"></element>
+<element name="medn_snw_dpth_nov" value="0" uom="cm"></element>
+<element name="medn_snw_dpth_dec" value="2" uom="cm"></element>
+<element name="medn_snw_dpth_yr" value="1" uom="cm"></element>
+<element name="medn_snw_dpth_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_snw_dpth_mnth_end_jan" value="8" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_feb" value="5" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_mar" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_apr" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_may" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_jun" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_jul" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_aug" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_sep" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_oct" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_nov" value="0" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_dec" value="3" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_yr" value="1" uom="cm"></element>
+<element name="avg_snw_dpth_mnth_end_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="extr_dly_rnfl_jan" value="58.7" uom="mm"><qualifier name="date" value="1946/09" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_feb" value="31.8" uom="mm"><qualifier name="date" value="1975/24" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_mar" value="41.7" uom="mm"><qualifier name="date" value="1942/16" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_apr" value="55.8" uom="mm"><qualifier name="date" value="1992/11" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_may" value="92.7" uom="mm"><qualifier name="date" value="1944/31" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_jun" value="53.8" uom="mm"><qualifier name="date" value="2000/13" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_jul" value="118.5" uom="mm"><qualifier name="date" value="1980/28" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_aug" value="80.8" uom="mm"><qualifier name="date" value="1970/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_sep" value="108.0" uom="mm"><qualifier name="date" value="1948/18" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_oct" value="121.4" uom="mm"><qualifier name="date" value="1954/15" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_nov" value="86.1" uom="mm"><qualifier name="date" value="1962/10" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_rnfl_dec" value="40.9" uom="mm"><qualifier name="date" value="1962/06" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_jan" value="36.8" uom="cm"><qualifier name="date" value="1966/23" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_feb" value="39.9" uom="cm"><qualifier name="date" value="1965/25" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_mar" value="32.3" uom="cm"><qualifier name="date" value="1964/10" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_apr" value="26.7" uom="cm"><qualifier name="date" value="1939/10" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_may" value="2.3" uom="cm"><qualifier name="date" value="1976/07" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_jun" value="0.0" uom="cm"><qualifier name="date" value="1938/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_jul" value="0.0" uom="cm"><qualifier name="date" value="1938/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_aug" value="0.0" uom="cm"><qualifier name="date" value="1938/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_sep" value="0.0" uom="cm"><qualifier name="date" value="1938/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_oct" value="7.4" uom="cm"><qualifier name="date" value="1962/25" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_nov" value="33.5" uom="cm"><qualifier name="date" value="1940/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_snwfl_dec" value="28.2" uom="cm"><qualifier name="date" value="1944/11" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_jan" value="58.7" uom="mm"><qualifier name="date" value="1946/09" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_feb" value="55.9" uom="mm"><qualifier name="date" value="1965/25" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_mar" value="41.7" uom="mm"><qualifier name="date" value="1942/16" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_apr" value="55.8" uom="mm"><qualifier name="date" value="1992/11" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_may" value="92.7" uom="mm"><qualifier name="date" value="1944/31" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_jun" value="53.8" uom="mm"><qualifier name="date" value="2000/13" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_jul" value="118.5" uom="mm"><qualifier name="date" value="1980/28" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_aug" value="80.8" uom="mm"><qualifier name="date" value="1970/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_sep" value="108.0" uom="mm"><qualifier name="date" value="1948/18" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_oct" value="121.4" uom="mm"><qualifier name="date" value="1954/15" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_nov" value="86.1" uom="mm"><qualifier name="date" value="1962/10" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_pcpn_dec" value="40.9" uom="mm"><qualifier name="date" value="1962/06" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_jan" value="67" uom="cm"><qualifier name="date" value="1999/15" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_feb" value="48" uom="cm"><qualifier name="date" value="2008/13" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_mar" value="30" uom="cm"><qualifier name="date" value="2008/09" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_apr" value="13" uom="cm"><qualifier name="date" value="1975/04" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_may" value="0" uom="cm"><qualifier name="date" value="1955/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_jun" value="0" uom="cm"><qualifier name="date" value="1955/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_jul" value="0" uom="cm"><qualifier name="date" value="1955/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_aug" value="0" uom="cm"><qualifier name="date" value="1955/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_sep" value="0" uom="cm"><qualifier name="date" value="1955/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_oct" value="13" uom="cm"><qualifier name="date" value="1969/22" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_nov" value="18" uom="cm"><qualifier name="date" value="2002/18" format="yyyy/dd"></qualifier></element>
+<element name="extr_snw_dpth_dec" value="36" uom="cm"><qualifier name="date" value="2008/24" format="yyyy/dd"></qualifier></element>
+</element>
+<element name="days_with_max_temp" uom="unitless" value="3">
+<element name="avg_dys_max_temp_lte_0C_jan" value="17.7" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_feb" value="14.2" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_mar" value="6.9" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_apr" value="0.53" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_may" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_nov" value="1.7" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_dec" value="11.7" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_yr" value="52.8" uom="d"></element>
+<element name="avg_dys_max_temp_lte_0C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_max_temp_gt_0C_jan" value="13.3" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_feb" value="14.1" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_mar" value="24.1" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_apr" value="29.5" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_may" value="31.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_jun" value="30.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_jul" value="31.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_aug" value="31.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_sep" value="30.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_oct" value="31.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_nov" value="28.3" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_dec" value="19.3" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_yr" value="312.5" uom="d"></element>
+<element name="avg_dys_max_temp_gt_0C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_max_temp_gt_10C_jan" value="0.87" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_feb" value="0.63" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_mar" value="5.7" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_apr" value="18.5" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_may" value="30.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_jun" value="30.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_jul" value="31.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_aug" value="31.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_sep" value="29.9" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_oct" value="24.4" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_nov" value="9.2" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_dec" value="1.7" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_yr" value="212.9" uom="d"></element>
+<element name="avg_dys_max_temp_gt_10C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_max_temp_gt_20C_jan" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_feb" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_mar" value="0.57" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_apr" value="3.2" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_may" value="11.6" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_jun" value="24.1" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_jul" value="30.3" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_aug" value="29.5" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_sep" value="18.6" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_oct" value="4.1" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_nov" value="0.23" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_dec" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_yr" value="122.3" uom="d"></element>
+<element name="avg_dys_max_temp_gt_20C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_max_temp_gt_30C_jan" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_feb" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_mar" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_apr" value="0.13" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_may" value="0.53" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_jun" value="3.3" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_jul" value="6.5" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_aug" value="4.1" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_sep" value="1.2" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_oct" value="0.03" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_nov" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_dec" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_yr" value="15.8" uom="d"></element>
+<element name="avg_dys_max_temp_gt_30C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_max_temp_gt_35C_jan" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_feb" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_mar" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_apr" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_may" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_jun" value="0.10" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_jul" value="0.47" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_aug" value="0.17" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_nov" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_dec" value="0.0" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_yr" value="0.74" uom="d"></element>
+<element name="avg_dys_max_temp_gt_35C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="days_with_min_temp" uom="unitless" value="4">
+<element name="avg_dys_min_temp_gt_0C_jan" value="2.7" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_feb" value="2.0" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_mar" value="6.4" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_apr" value="19.7" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_may" value="30.1" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_jun" value="30.0" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_jul" value="31.0" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_aug" value="31.0" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_sep" value="29.8" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_oct" value="26.9" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_nov" value="14.3" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_dec" value="4.8" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_yr" value="228.7" uom="d"></element>
+<element name="avg_dys_min_temp_gt_0C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_min_temp_lte_2C_jan" value="30.2" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_feb" value="27.7" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_mar" value="28.0" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_apr" value="16.0" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_may" value="3.4" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_aug" value="0.03" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_sep" value="0.53" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_oct" value="9.6" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_nov" value="21.4" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_dec" value="29.3" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_yr" value="166.2" uom="d"></element>
+<element name="avg_dys_min_temp_lte_2C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_min_temp_lte_0C_jan" value="28.3" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_feb" value="26.2" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_mar" value="24.6" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_apr" value="10.3" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_may" value="0.93" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_sep" value="0.20" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_oct" value="4.1" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_nov" value="15.7" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_dec" value="26.2" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_yr" value="136.5" uom="d"></element>
+<element name="avg_dys_min_temp_lte_0C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_min_temp_lt_-2C_jan" value="25.8" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_feb" value="23.3" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_mar" value="19.5" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_apr" value="5.2" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_may" value="0.03" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_oct" value="1.1" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_nov" value="9.5" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_dec" value="21.7" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_yr" value="106.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-2C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_min_temp_lt_-10C_jan" value="14.2" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_feb" value="11.9" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_mar" value="5.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_apr" value="0.07" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_may" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_nov" value="0.47" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_dec" value="7.3" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_yr" value="38.9" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-10C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_min_temp_lt_-20C_jan" value="2.6" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_feb" value="0.77" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_mar" value="0.23" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_apr" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_may" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_nov" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_dec" value="0.33" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_yr" value="3.9" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-20C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_min_temp_lt_-30C_jan" value="0.07" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_feb" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_mar" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_apr" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_may" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_nov" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_dec" value="0.0" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_yr" value="0.07" uom="d"></element>
+<element name="avg_dys_min_temp_lt_-30C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="days_with_rainfall" uom="unitless" value="5">
+<element name="avg_dys_rnfl_gte_0.2mm_jan" value="5.4" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_feb" value="4.6" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_mar" value="7.4" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_apr" value="11.3" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_may" value="12.5" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_jun" value="10.8" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_jul" value="10.4" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_aug" value="10.2" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_sep" value="10.5" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_oct" value="12.0" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_nov" value="11.0" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_dec" value="7.1" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_yr" value="113.2" uom="d"></element>
+<element name="avg_dys_rnfl_gte_0.2mm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_rnfl_gte_5mm_jan" value="1.6" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_feb" value="1.7" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_mar" value="2.1" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_apr" value="4.2" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_may" value="4.8" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_jun" value="5.0" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_jul" value="4.1" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_aug" value="4.2" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_sep" value="4.5" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_oct" value="3.8" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_nov" value="4.1" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_dec" value="2.6" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_yr" value="42.6" uom="d"></element>
+<element name="avg_dys_rnfl_gte_5mm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_rnfl_gte_10mm_jan" value="0.77" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_feb" value="0.93" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_mar" value="1.1" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_apr" value="2.1" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_may" value="2.4" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_jun" value="2.5" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_jul" value="2.6" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_aug" value="2.4" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_sep" value="2.4" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_oct" value="2.0" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_nov" value="2.4" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_dec" value="1.1" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_yr" value="22.5" uom="d"></element>
+<element name="avg_dys_rnfl_gte_10mm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_rnfl_gte_25mm_jan" value="0.07" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_feb" value="0.10" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_mar" value="0.03" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_apr" value="0.23" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_may" value="0.27" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_jun" value="0.40" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_jul" value="0.83" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_aug" value="0.90" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_sep" value="0.60" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_oct" value="0.20" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_nov" value="0.50" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_dec" value="0.10" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_yr" value="4.2" uom="d"></element>
+<element name="avg_dys_rnfl_gte_25mm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="days_with_snowfall" uom="unitless" value="6">
+<element name="avg_dys_snwfl_gte_0.2cm_jan" value="12.1" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_feb" value="9.4" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_mar" value="6.8" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_apr" value="2.4" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_may" value="0.03" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_oct" value="0.30" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_nov" value="3.4" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_dec" value="10.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_yr" value="44.4" uom="d"></element>
+<element name="avg_dys_snwfl_gte_0.2cm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_snwfl_gte_5cm_jan" value="1.7" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_feb" value="1.5" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_mar" value="1.2" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_apr" value="0.23" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_may" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_nov" value="0.43" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_dec" value="1.5" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_yr" value="6.6" uom="d"></element>
+<element name="avg_dys_snwfl_gte_5cm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_snwfl_gte_10cm_jan" value="0.50" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_feb" value="0.33" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_mar" value="0.33" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_apr" value="0.03" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_may" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_nov" value="0.13" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_dec" value="0.50" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_yr" value="1.8" uom="d"></element>
+<element name="avg_dys_snwfl_gte_10cm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_snwfl_gte_25cm_jan" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_feb" value="0.07" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_mar" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_apr" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_may" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_nov" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_dec" value="0.0" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_yr" value="0.07" uom="d"></element>
+<element name="avg_dys_snwfl_gte_25cm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="days_with_precipitation" uom="unitless" value="7">
+<element name="avg_dys_pcpn_gte_0.2mm_jan" value="15.1" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_feb" value="11.6" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_mar" value="12.4" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_apr" value="12.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_may" value="12.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_jun" value="10.8" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_jul" value="10.4" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_aug" value="10.2" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_sep" value="10.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_oct" value="12.1" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_nov" value="13.1" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_dec" value="14.8" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_yr" value="145.9" uom="d"></element>
+<element name="avg_dys_pcpn_gte_0.2mm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_pcpn_gte_5mm_jan" value="3.3" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_feb" value="3.2" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_mar" value="3.3" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_apr" value="4.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_may" value="4.8" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_jun" value="5.0" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_jul" value="4.1" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_aug" value="4.2" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_sep" value="4.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_oct" value="3.8" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_nov" value="4.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_dec" value="3.9" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_yr" value="49.0" uom="d"></element>
+<element name="avg_dys_pcpn_gte_5mm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_pcpn_gte_10mm_jan" value="1.4" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_feb" value="1.3" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_mar" value="1.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_apr" value="2.3" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_may" value="2.4" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_jun" value="2.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_jul" value="2.6" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_aug" value="2.4" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_sep" value="2.4" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_oct" value="2.0" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_nov" value="2.6" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_dec" value="1.7" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_yr" value="25.0" uom="d"></element>
+<element name="avg_dys_pcpn_gte_10mm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_pcpn_gte_25mm_jan" value="0.10" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_feb" value="0.20" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_mar" value="0.07" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_apr" value="0.23" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_may" value="0.27" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_jun" value="0.40" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_jul" value="0.83" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_aug" value="0.90" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_sep" value="0.60" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_oct" value="0.20" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_nov" value="0.53" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_dec" value="0.17" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_yr" value="4.5" uom="d"></element>
+<element name="avg_dys_pcpn_gte_25mm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="days_with_snwdpth" uom="unitless" value="8">
+<element name="avg_dys_snw_dpth_gte_1cm_jan" value="21.2" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_feb" value="20.7" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_mar" value="11.8" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_apr" value="1.4" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_may" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_oct" value="0.03" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_nov" value="2.7" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_dec" value="13.8" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_yr" value="71.5" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_1cm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_jan" value="13.9" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_feb" value="12.6" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_mar" value="6.9" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_apr" value="0.57" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_may" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_nov" value="0.77" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_dec" value="6.1" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_yr" value="40.9" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_5cm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_jan" value="7.3" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_feb" value="6.7" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_mar" value="4.1" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_apr" value="0.23" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_may" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_nov" value="0.27" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_dec" value="2.8" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_yr" value="21.4" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_10cm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_jan" value="1.6" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_feb" value="2.1" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_mar" value="0.77" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_apr" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_may" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_jun" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_jul" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_aug" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_sep" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_oct" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_nov" value="0.0" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_dec" value="0.67" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_yr" value="5.1" uom="d"></element>
+<element name="avg_dys_snw_dpth_gte_20cm_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="wind" uom="unitless" value="9">
+<element name="wnd_spd_jan" value="17.6" uom="kph"></element>
+<element name="wnd_spd_feb" value="17.0" uom="kph"></element>
+<element name="wnd_spd_mar" value="16.9" uom="kph"></element>
+<element name="wnd_spd_apr" value="16.8" uom="kph"></element>
+<element name="wnd_spd_may" value="14.4" uom="kph"></element>
+<element name="wnd_spd_jun" value="13.2" uom="kph"></element>
+<element name="wnd_spd_jul" value="12.9" uom="kph"></element>
+<element name="wnd_spd_aug" value="11.9" uom="kph"></element>
+<element name="wnd_spd_sep" value="12.7" uom="kph"></element>
+<element name="wnd_spd_oct" value="14.0" uom="kph"></element>
+<element name="wnd_spd_nov" value="15.7" uom="kph"></element>
+<element name="wnd_spd_dec" value="16.7" uom="kph"></element>
+<element name="wnd_spd_yr" value="15.0" uom="kph"></element>
+<element name="wnd_spd_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="most_freq_wnd_dir_jan" value="W" uom="unitless"></element>
+<element name="most_freq_wnd_dir_feb" value="W" uom="unitless"></element>
+<element name="most_freq_wnd_dir_mar" value="N" uom="unitless"></element>
+<element name="most_freq_wnd_dir_apr" value="N" uom="unitless"></element>
+<element name="most_freq_wnd_dir_may" value="N" uom="unitless"></element>
+<element name="most_freq_wnd_dir_jun" value="N" uom="unitless"></element>
+<element name="most_freq_wnd_dir_jul" value="W" uom="unitless"></element>
+<element name="most_freq_wnd_dir_aug" value="N" uom="unitless"></element>
+<element name="most_freq_wnd_dir_sep" value="W" uom="unitless"></element>
+<element name="most_freq_wnd_dir_oct" value="W" uom="unitless"></element>
+<element name="most_freq_wnd_dir_nov" value="W" uom="unitless"></element>
+<element name="most_freq_wnd_dir_dec" value="W" uom="unitless"></element>
+<element name="most_freq_wnd_dir_yr" value="W" uom="unitless"></element>
+<element name="most_freq_wnd_dir_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="max_hly_wnd_spd_jan" value="77" uom="kph"><qualifier name="date" value="1959/22" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_feb" value="77" uom="kph"><qualifier name="date" value="1958/17" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_mar" value="97" uom="kph"><qualifier name="date" value="1959/15" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_apr" value="81" uom="kph"><qualifier name="date" value="1979/06" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_may" value="71" uom="kph"><qualifier name="date" value="1964/09" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_jun" value="63" uom="kph"><qualifier name="date" value="1980/20" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="NE" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_jul" value="61" uom="kph"><qualifier name="date" value="1964/13" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="NE" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_aug" value="71" uom="kph"><qualifier name="date" value="1958/31" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_sep" value="77" uom="kph"><qualifier name="date" value="1954/22" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_oct" value="92" uom="kph"><qualifier name="date" value="1954/16" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_nov" value="80" uom="kph"><qualifier name="date" value="1955/16" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_hly_wnd_spd_dec" value="76" uom="kph"><qualifier name="date" value="2008/28" format="yyyy/dd"></qualifier><qualifier name="max_hly_wnd_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_jan" value="115" uom="kph"><qualifier name="date" value="1978/26" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_feb" value="105" uom="kph"><qualifier name="date" value="1956/25" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_mar" value="124" uom="kph"><qualifier name="date" value="1964/05" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="SE" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_apr" value="115" uom="kph"><qualifier name="date" value="2009/25" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_may" value="109" uom="kph"><qualifier name="date" value="1983/02" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_jun" value="107" uom="kph"><qualifier name="date" value="1990/03" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_jul" value="135" uom="kph"><qualifier name="date" value="1956/01" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="SE" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_aug" value="115" uom="kph"><qualifier name="date" value="2009/11" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_sep" value="106" uom="kph"><qualifier name="date" value="2010/22" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_oct" value="104" uom="kph"><qualifier name="date" value="1989/14" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_nov" value="122" uom="kph"><qualifier name="date" value="1955/17" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="SE" uom="unitless"></qualifier></element>
+<element name="max_gst_spd_dec" value="109" uom="kph"><qualifier name="date" value="1996/01" format="yyyy/dd"></qualifier><qualifier name="max_gst_spd_dir" value="E" uom="unitless"></qualifier></element>
+<element name="avg_dys_wnd_spd_gte_52kph_jan" value="3.1" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_feb" value="2.4" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_mar" value="2.8" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_apr" value="2.9" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_may" value="1.4" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_jun" value="0.7" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_jul" value="0.6" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_aug" value="0.8" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_sep" value="0.7" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_oct" value="1.8" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_nov" value="2.5" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_dec" value="2.8" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_yr" value="22.2" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_52kph_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_jan" value="0.9" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_feb" value="0.7" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_mar" value="0.9" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_apr" value="0.9" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_may" value="0.4" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_jun" value="0.2" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_jul" value="0.2" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_aug" value="0.3" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_sep" value="0.1" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_oct" value="0.4" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_nov" value="0.8" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_dec" value="0.4" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_yr" value="6.1" uom="d"></element>
+<element name="avg_dys_wnd_spd_gte_63kph_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="degree_days" uom="unitless" value="10">
+<element name="avg_acc_dd_temp_gt_24C_jan" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_feb" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_mar" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_apr" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_may" value="0.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_jun" value="4.5" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_jul" value="13.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_aug" value="7.7" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_sep" value="1.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_oct" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_nov" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_dec" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_yr" value="27.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_24C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_gt_18C_jan" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_feb" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_mar" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_apr" value="1.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_may" value="13.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_jun" value="56.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_jul" value="112.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_aug" value="91.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_sep" value="28.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_oct" value="2.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_nov" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_dec" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_yr" value="305.5" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_18C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_gt_15C_jan" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_feb" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_mar" value="0.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_apr" value="4.8" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_may" value="34.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_jun" value="118.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_jul" value="200.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_aug" value="173.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_sep" value="71.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_oct" value="8.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_nov" value="0.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_dec" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_yr" value="611.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_15C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_gt_10C_jan" value="0.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_feb" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_mar" value="3.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_apr" value="25.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_may" value="113.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_jun" value="258.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_jul" value="355.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_aug" value="327.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_sep" value="189.8" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_oct" value="46.7" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_nov" value="5.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_dec" value="0.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_yr" value="1324.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_10C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_gt_5C_jan" value="2.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_feb" value="1.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_mar" value="18.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_apr" value="91.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_may" value="252.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_jun" value="407.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_jul" value="510.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_aug" value="482.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_sep" value="336.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_oct" value="146.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_nov" value="36.7" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_dec" value="5.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_yr" value="2290.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_5C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_gt_0C_jan" value="18.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_feb" value="16.8" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_mar" value="71.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_apr" value="215.8" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_may" value="406.8" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_jun" value="557.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_jul" value="665.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_aug" value="637.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_sep" value="486.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_oct" value="294.5" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_nov" value="125.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_dec" value="35.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_yr" value="3530.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_gt_0C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_lt_0C_jan" value="188.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_feb" value="144.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_mar" value="69.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_apr" value="4.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_may" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_jun" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_jul" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_aug" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_sep" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_oct" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_nov" value="14.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_dec" value="102.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_yr" value="523.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_0C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_lt_5C_jan" value="327.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_feb" value="270.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_mar" value="171.5" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_apr" value="29.8" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_may" value="0.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_jun" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_jul" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_aug" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_sep" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_oct" value="6.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_nov" value="75.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_dec" value="227.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_yr" value="1109.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_5C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_lt_10C_jan" value="480.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_feb" value="410.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_mar" value="311.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_apr" value="113.5" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_may" value="17.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_jun" value="0.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_jul" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_aug" value="0.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_sep" value="3.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_oct" value="62.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_nov" value="193.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_dec" value="378.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_yr" value="1970.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_10C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_lt_15C_jan" value="635.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_feb" value="551.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_mar" value="463.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_apr" value="243.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_may" value="92.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_jun" value="10.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_jul" value="0.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_aug" value="1.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_sep" value="35.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_oct" value="179.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_nov" value="338.5" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_dec" value="532.7" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_yr" value="3082.8" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_15C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_acc_dd_temp_lt_18C_jan" value="728.1" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_feb" value="636.3" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_mar" value="556.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_apr" value="329.6" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_may" value="164.2" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_jun" value="38.9" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_jul" value="5.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_aug" value="12.0" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_sep" value="82.5" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_oct" value="265.7" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_nov" value="428.4" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_dec" value="625.7" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_yr" value="3872.8" uom="DD(C)"></element>
+<element name="avg_acc_dd_temp_lt_18C_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="bright_sunshine" uom="unitless" value="11">
+<element name="extr_dly_br_sun_hrs_jan" value="9.3" uom="h"><qualifier name="date" value="2000/28" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_feb" value="10.5" uom="h"><qualifier name="date" value="2008/28" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_mar" value="12.1" uom="h"><qualifier name="date" value="2000/31" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_apr" value="13.6" uom="h"><qualifier name="date" value="1999/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_may" value="14.7" uom="h"><qualifier name="date" value="1999/29" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_jun" value="15.0" uom="h"><qualifier name="date" value="1997/27" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_jul" value="14.8" uom="h"><qualifier name="date" value="1998/05" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_aug" value="14.2" uom="h"><qualifier name="date" value="1999/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_sep" value="13.1" uom="h"><qualifier name="date" value="1999/02" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_oct" value="10.7" uom="h"><qualifier name="date" value="1997/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_nov" value="9.7" uom="h"><qualifier name="date" value="1998/03" format="yyyy/dd"></qualifier></element>
+<element name="extr_dly_br_sun_hrs_dec" value="8.8" uom="h"><qualifier name="date" value="1998/01" format="yyyy/dd"></qualifier></element>
+</element>
+<element name="humidex" uom="unitless" value="12">
+<element name="extr_max_hdx_jan" value="19.0" uom="unitless"><qualifier name="date" value="2005/13" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_feb" value="14.8" uom="unitless"><qualifier name="date" value="1984/23" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_mar" value="29.2" uom="unitless"><qualifier name="date" value="1998/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_apr" value="37.9" uom="unitless"><qualifier name="date" value="1990/25" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_may" value="42.6" uom="unitless"><qualifier name="date" value="2006/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_jun" value="45.0" uom="unitless"><qualifier name="date" value="1957/17" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_jul" value="50.3" uom="unitless"><qualifier name="date" value="1995/14" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_aug" value="46.6" uom="unitless"><qualifier name="date" value="2006/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_sep" value="48.0" uom="unitless"><qualifier name="date" value="1953/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_oct" value="39.1" uom="unitless"><qualifier name="date" value="2007/08" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_nov" value="28.6" uom="unitless"><qualifier name="date" value="1961/03" format="yyyy/dd"></qualifier></element>
+<element name="extr_max_hdx_dec" value="23.9" uom="unitless"><qualifier name="date" value="1982/03" format="yyyy/dd"></qualifier></element>
+<element name="dys_hdx_gte_30_jan" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_30_feb" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_30_mar" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_30_apr" value="0.4" uom="d"></element>
+<element name="dys_hdx_gte_30_may" value="2.9" uom="d"></element>
+<element name="dys_hdx_gte_30_jun" value="9.3" uom="d"></element>
+<element name="dys_hdx_gte_30_jul" value="16.9" uom="d"></element>
+<element name="dys_hdx_gte_30_aug" value="14.8" uom="d"></element>
+<element name="dys_hdx_gte_30_sep" value="5.7" uom="d"></element>
+<element name="dys_hdx_gte_30_oct" value="0.3" uom="d"></element>
+<element name="dys_hdx_gte_30_nov" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_30_dec" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_30_yr" value="50.3" uom="d"></element>
+<element name="dys_hdx_gte_30_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="dys_hdx_gte_35_jan" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_35_feb" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_35_mar" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_35_apr" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_35_may" value="0.5" uom="d"></element>
+<element name="dys_hdx_gte_35_jun" value="3.7" uom="d"></element>
+<element name="dys_hdx_gte_35_jul" value="7.3" uom="d"></element>
+<element name="dys_hdx_gte_35_aug" value="5.5" uom="d"></element>
+<element name="dys_hdx_gte_35_sep" value="1.4" uom="d"></element>
+<element name="dys_hdx_gte_35_oct" value="0.1" uom="d"></element>
+<element name="dys_hdx_gte_35_nov" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_35_dec" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_35_yr" value="18.4" uom="d"></element>
+<element name="dys_hdx_gte_35_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="dys_hdx_gte_40_jan" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_40_feb" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_40_mar" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_40_apr" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_40_may" value="0.1" uom="d"></element>
+<element name="dys_hdx_gte_40_jun" value="0.7" uom="d"></element>
+<element name="dys_hdx_gte_40_jul" value="2.0" uom="d"></element>
+<element name="dys_hdx_gte_40_aug" value="1.3" uom="d"></element>
+<element name="dys_hdx_gte_40_sep" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_40_oct" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_40_nov" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_40_dec" value="0.0" uom="d"></element>
+<element name="dys_hdx_gte_40_yr" value="4.1" uom="d"></element>
+<element name="dys_hdx_gte_40_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="wind_chill" uom="unitless" value="13">
+<element name="extr_wnd_chl_jan" value="-44.7" uom="unitless"><qualifier name="date" value="1981/04" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_feb" value="-38.9" uom="unitless"><qualifier name="date" value="1967/06" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_mar" value="-36.2" uom="unitless"><qualifier name="date" value="2003/03" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_apr" value="-25.4" uom="unitless"><qualifier name="date" value="1972/07" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_may" value="-9.5" uom="unitless"><qualifier name="date" value="1963/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_jun" value="0.0" uom="unitless"><qualifier name="date" value="1953/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_jul" value="0.0" uom="unitless"><qualifier name="date" value="1953/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_aug" value="0.0" uom="unitless"><qualifier name="date" value="1953/01" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_sep" value="-8.0" uom="unitless"><qualifier name="date" value="1965/27" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_oct" value="-13.5" uom="unitless"><qualifier name="date" value="1969/23" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_nov" value="-25.4" uom="unitless"><qualifier name="date" value="1958/30" format="yyyy/dd"></qualifier></element>
+<element name="extr_wnd_chl_dec" value="-38.5" uom="unitless"><qualifier name="date" value="1980/25" format="yyyy/dd"></qualifier></element>
+<element name="dys_wnd_chl_lt_-20_jan" value="9.1" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_feb" value="7.5" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_mar" value="2.3" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_apr" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_may" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_jun" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_jul" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_aug" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_sep" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_oct" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_nov" value="0.1" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_dec" value="4.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_yr" value="23.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-20_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="dys_wnd_chl_lt_-30_jan" value="2.2" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_feb" value="0.5" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_mar" value="0.2" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_apr" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_may" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_jun" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_jul" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_aug" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_sep" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_oct" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_nov" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_dec" value="0.2" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_yr" value="3.1" uom="d"></element>
+<element name="dys_wnd_chl_lt_-30_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="dys_wnd_chl_lt_-40_jan" value="0.1" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_feb" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_mar" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_apr" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_may" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_jun" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_jul" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_aug" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_sep" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_oct" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_nov" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_dec" value="0.0" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_yr" value="0.1" uom="d"></element>
+<element name="dys_wnd_chl_lt_-40_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="humidity" uom="unitless" value="14">
+<element name="avg_vpr_pres_jan" value="0.4" uom="kPa"></element>
+<element name="avg_vpr_pres_feb" value="0.4" uom="kPa"></element>
+<element name="avg_vpr_pres_mar" value="0.5" uom="kPa"></element>
+<element name="avg_vpr_pres_apr" value="0.7" uom="kPa"></element>
+<element name="avg_vpr_pres_may" value="1.0" uom="kPa"></element>
+<element name="avg_vpr_pres_jun" value="1.5" uom="kPa"></element>
+<element name="avg_vpr_pres_jul" value="1.7" uom="kPa"></element>
+<element name="avg_vpr_pres_aug" value="1.7" uom="kPa"></element>
+<element name="avg_vpr_pres_sep" value="1.4" uom="kPa"></element>
+<element name="avg_vpr_pres_oct" value="0.9" uom="kPa"></element>
+<element name="avg_vpr_pres_nov" value="0.7" uom="kPa"></element>
+<element name="avg_vpr_pres_dec" value="0.5" uom="kPa"></element>
+<element name="avg_vpr_pres_yr" value="0.9" uom="kPa"></element>
+<element name="avg_vpr_pres_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_rel_hum_0600LST_jan" value="80.8" uom="%"></element>
+<element name="avg_rel_hum_0600LST_feb" value="79.3" uom="%"></element>
+<element name="avg_rel_hum_0600LST_mar" value="78.1" uom="%"></element>
+<element name="avg_rel_hum_0600LST_apr" value="75.4" uom="%"></element>
+<element name="avg_rel_hum_0600LST_may" value="77.2" uom="%"></element>
+<element name="avg_rel_hum_0600LST_jun" value="79.8" uom="%"></element>
+<element name="avg_rel_hum_0600LST_jul" value="81.9" uom="%"></element>
+<element name="avg_rel_hum_0600LST_aug" value="85.7" uom="%"></element>
+<element name="avg_rel_hum_0600LST_sep" value="87.4" uom="%"></element>
+<element name="avg_rel_hum_0600LST_oct" value="85.2" uom="%"></element>
+<element name="avg_rel_hum_0600LST_nov" value="83.3" uom="%"></element>
+<element name="avg_rel_hum_0600LST_dec" value="81.8" uom="%"></element>
+<element name="avg_rel_hum_0600LST_yr" value="81.3" uom="%"></element>
+<element name="avg_rel_hum_0600LST_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_rel_hum_1500LST_jan" value="72.0" uom="%"></element>
+<element name="avg_rel_hum_1500LST_feb" value="68.4" uom="%"></element>
+<element name="avg_rel_hum_1500LST_mar" value="61.4" uom="%"></element>
+<element name="avg_rel_hum_1500LST_apr" value="54.4" uom="%"></element>
+<element name="avg_rel_hum_1500LST_may" value="53.5" uom="%"></element>
+<element name="avg_rel_hum_1500LST_jun" value="54.9" uom="%"></element>
+<element name="avg_rel_hum_1500LST_jul" value="53.3" uom="%"></element>
+<element name="avg_rel_hum_1500LST_aug" value="55.8" uom="%"></element>
+<element name="avg_rel_hum_1500LST_sep" value="58.5" uom="%"></element>
+<element name="avg_rel_hum_1500LST_oct" value="62.1" uom="%"></element>
+<element name="avg_rel_hum_1500LST_nov" value="69.2" uom="%"></element>
+<element name="avg_rel_hum_1500LST_dec" value="72.5" uom="%"></element>
+<element name="avg_rel_hum_1500LST_yr" value="61.3" uom="%"></element>
+<element name="avg_rel_hum_1500LST_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="pressure" uom="unitless" value="15">
+<element name="avg_stn_pres_jan" value="99.5" uom="kPa"></element>
+<element name="avg_stn_pres_feb" value="99.6" uom="kPa"></element>
+<element name="avg_stn_pres_mar" value="99.6" uom="kPa"></element>
+<element name="avg_stn_pres_apr" value="99.4" uom="kPa"></element>
+<element name="avg_stn_pres_may" value="99.4" uom="kPa"></element>
+<element name="avg_stn_pres_jun" value="99.4" uom="kPa"></element>
+<element name="avg_stn_pres_jul" value="99.4" uom="kPa"></element>
+<element name="avg_stn_pres_aug" value="99.6" uom="kPa"></element>
+<element name="avg_stn_pres_sep" value="99.7" uom="kPa"></element>
+<element name="avg_stn_pres_oct" value="99.7" uom="kPa"></element>
+<element name="avg_stn_pres_nov" value="99.6" uom="kPa"></element>
+<element name="avg_stn_pres_dec" value="99.6" uom="kPa"></element>
+<element name="avg_stn_pres_yr" value="99.5" uom="kPa"></element>
+<element name="avg_stn_pres_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+<element name="avg_slp_jan" value="101.7" uom="kPa"></element>
+<element name="avg_slp_feb" value="101.8" uom="kPa"></element>
+<element name="avg_slp_mar" value="101.7" uom="kPa"></element>
+<element name="avg_slp_apr" value="101.5" uom="kPa"></element>
+<element name="avg_slp_may" value="101.5" uom="kPa"></element>
+<element name="avg_slp_jun" value="101.4" uom="kPa"></element>
+<element name="avg_slp_jul" value="101.5" uom="kPa"></element>
+<element name="avg_slp_aug" value="101.6" uom="kPa"></element>
+<element name="avg_slp_sep" value="101.7" uom="kPa"></element>
+<element name="avg_slp_oct" value="101.8" uom="kPa"></element>
+<element name="avg_slp_nov" value="101.7" uom="kPa"></element>
+<element name="avg_slp_dec" value="101.7" uom="kPa"></element>
+<element name="avg_slp_yr" value="101.6" uom="kPa"></element>
+<element name="avg_slp_code" value="A" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="hours_with_visibility" uom="unitless" value="16">
+<element name="vis_lt_1km_jan" value="7.7" uom="h"></element>
+<element name="vis_lt_1km_feb" value="15.6" uom="h"></element>
+<element name="vis_lt_1km_mar" value="8.4" uom="h"></element>
+<element name="vis_lt_1km_apr" value="4.1" uom="h"></element>
+<element name="vis_lt_1km_may" value="4.5" uom="h"></element>
+<element name="vis_lt_1km_jun" value="3.7" uom="h"></element>
+<element name="vis_lt_1km_jul" value="1.4" uom="h"></element>
+<element name="vis_lt_1km_aug" value="0.9" uom="h"></element>
+<element name="vis_lt_1km_sep" value="3.6" uom="h"></element>
+<element name="vis_lt_1km_oct" value="7.6" uom="h"></element>
+<element name="vis_lt_1km_nov" value="9.1" uom="h"></element>
+<element name="vis_lt_1km_dec" value="8.6" uom="h"></element>
+<element name="vis_lt_1km_yr" value="75.1" uom="h"></element>
+<element name="vis_lt_1km_code" value="C" uom="code" code_src="msc" code_type="normals"></element>
+<element name="vis_1km_to_9km_jan" value="142.6" uom="h"></element>
+<element name="vis_1km_to_9km_feb" value="120.2" uom="h"></element>
+<element name="vis_1km_to_9km_mar" value="100.4" uom="h"></element>
+<element name="vis_1km_to_9km_apr" value="73.7" uom="h"></element>
+<element name="vis_1km_to_9km_may" value="72.3" uom="h"></element>
+<element name="vis_1km_to_9km_jun" value="71.6" uom="h"></element>
+<element name="vis_1km_to_9km_jul" value="69.2" uom="h"></element>
+<element name="vis_1km_to_9km_aug" value="81.6" uom="h"></element>
+<element name="vis_1km_to_9km_sep" value="88.2" uom="h"></element>
+<element name="vis_1km_to_9km_oct" value="84.4" uom="h"></element>
+<element name="vis_1km_to_9km_nov" value="114.1" uom="h"></element>
+<element name="vis_1km_to_9km_dec" value="126.7" uom="h"></element>
+<element name="vis_1km_to_9km_yr" value="1144.9" uom="h"></element>
+<element name="vis_1km_to_9km_code" value="C" uom="code" code_src="msc" code_type="normals"></element>
+<element name="vis_gt_9km_jan" value="593.7" uom="h"></element>
+<element name="vis_gt_9km_feb" value="542.8" uom="h"></element>
+<element name="vis_gt_9km_mar" value="635.3" uom="h"></element>
+<element name="vis_gt_9km_apr" value="642.2" uom="h"></element>
+<element name="vis_gt_9km_may" value="667.3" uom="h"></element>
+<element name="vis_gt_9km_jun" value="644.7" uom="h"></element>
+<element name="vis_gt_9km_jul" value="673.4" uom="h"></element>
+<element name="vis_gt_9km_aug" value="661.5" uom="h"></element>
+<element name="vis_gt_9km_sep" value="628.2" uom="h"></element>
+<element name="vis_gt_9km_oct" value="652.0" uom="h"></element>
+<element name="vis_gt_9km_nov" value="596.8" uom="h"></element>
+<element name="vis_gt_9km_dec" value="608.7" uom="h"></element>
+<element name="vis_gt_9km_yr" value="7546.6" uom="h"></element>
+<element name="vis_gt_9km_code" value="C" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+<element name="hours_with_cloud_amount" uom="unitless" value="17">
+<element name="cld_0_to_2_tnths_jan" value="139.0" uom="h"></element>
+<element name="cld_0_to_2_tnths_feb" value="149.6" uom="h"></element>
+<element name="cld_0_to_2_tnths_mar" value="205.9" uom="h"></element>
+<element name="cld_0_to_2_tnths_apr" value="190.8" uom="h"></element>
+<element name="cld_0_to_2_tnths_may" value="212.7" uom="h"></element>
+<element name="cld_0_to_2_tnths_jun" value="206.8" uom="h"></element>
+<element name="cld_0_to_2_tnths_jul" value="226.5" uom="h"></element>
+<element name="cld_0_to_2_tnths_aug" value="246.0" uom="h"></element>
+<element name="cld_0_to_2_tnths_sep" value="242.7" uom="h"></element>
+<element name="cld_0_to_2_tnths_oct" value="197.9" uom="h"></element>
+<element name="cld_0_to_2_tnths_nov" value="129.7" uom="h"></element>
+<element name="cld_0_to_2_tnths_dec" value="125.2" uom="h"></element>
+<element name="cld_0_to_2_tnths_yr" value="2272.9" uom="h"></element>
+<element name="cld_0_to_2_tnths_code" value="C" uom="code" code_src="msc" code_type="normals"></element>
+<element name="cld_3_to_7_tnths_jan" value="93.8" uom="h"></element>
+<element name="cld_3_to_7_tnths_feb" value="101.4" uom="h"></element>
+<element name="cld_3_to_7_tnths_mar" value="114.4" uom="h"></element>
+<element name="cld_3_to_7_tnths_apr" value="116.6" uom="h"></element>
+<element name="cld_3_to_7_tnths_may" value="145.1" uom="h"></element>
+<element name="cld_3_to_7_tnths_jun" value="179.9" uom="h"></element>
+<element name="cld_3_to_7_tnths_jul" value="214.2" uom="h"></element>
+<element name="cld_3_to_7_tnths_aug" value="198.8" uom="h"></element>
+<element name="cld_3_to_7_tnths_sep" value="154.4" uom="h"></element>
+<element name="cld_3_to_7_tnths_oct" value="141.9" uom="h"></element>
+<element name="cld_3_to_7_tnths_nov" value="108.8" uom="h"></element>
+<element name="cld_3_to_7_tnths_dec" value="98.6" uom="h"></element>
+<element name="cld_3_to_7_tnths_yr" value="1667.7" uom="h"></element>
+<element name="cld_3_to_7_tnths_code" value="C" uom="code" code_src="msc" code_type="normals"></element>
+<element name="cld_8_to_10_tnths_jan" value="511.2" uom="h"></element>
+<element name="cld_8_to_10_tnths_feb" value="427.6" uom="h"></element>
+<element name="cld_8_to_10_tnths_mar" value="423.8" uom="h"></element>
+<element name="cld_8_to_10_tnths_apr" value="412.6" uom="h"></element>
+<element name="cld_8_to_10_tnths_may" value="386.2" uom="h"></element>
+<element name="cld_8_to_10_tnths_jun" value="333.3" uom="h"></element>
+<element name="cld_8_to_10_tnths_jul" value="303.3" uom="h"></element>
+<element name="cld_8_to_10_tnths_aug" value="299.2" uom="h"></element>
+<element name="cld_8_to_10_tnths_sep" value="322.9" uom="h"></element>
+<element name="cld_8_to_10_tnths_oct" value="404.2" uom="h"></element>
+<element name="cld_8_to_10_tnths_nov" value="481.4" uom="h"></element>
+<element name="cld_8_to_10_tnths_dec" value="520.2" uom="h"></element>
+<element name="cld_8_to_10_tnths_yr" value="4825.9" uom="h"></element>
+<element name="cld_8_to_10_tnths_code" value="C" uom="code" code_src="msc" code_type="normals"></element>
+</element>
+
+
+<element name="frost_free" uom="unitless" value="18">
+<element name="avg_date_last_spr_frost" value="0430" format="mmdd"><qualifier name="avg_date_last_spr_frost_code" uom="code" value="A" code_src="msc" code_type="normals"></qualifier></element>
+<element name="avg_date_first_fall_frost" value="1016" format="mmdd"><qualifier name="avg_date_first_fall_frost_code" uom="code" value="A" code_src="msc" code_type="normals"></qualifier></element>
+<element name="avg_length_frost_free_pd" value="168" uom="d"><qualifier name="avg_length_frost_free_pd_code" uom="code" value="A" code_src="msc" code_type="normals"></qualifier></element>
+<element name="pb_last_temp_spr_lte_0C_10pct" value="0519" format="mmdd"></element>
+<element name="pb_last_temp_spr_lte_0C_25pct" value="0513" format="mmdd"></element>
+<element name="pb_last_temp_spr_lte_0C_33pct" value="0510" format="mmdd"></element>
+<element name="pb_last_temp_spr_lte_0C_50pct" value="0504" format="mmdd"></element>
+<element name="pb_last_temp_spr_lte_0C_66pct" value="0429" format="mmdd"></element>
+<element name="pb_last_temp_spr_lte_0C_75pct" value="0428" format="mmdd"></element>
+<element name="pb_last_temp_spr_lte_0C_90pct" value="0416" format="mmdd"></element>
+<element name="pb_1st_temp_fall_lte_0C_10pct" value="0922" format="mmdd"></element>
+<element name="pb_1st_temp_fall_lte_0C_25pct" value="0929" format="mmdd"></element>
+<element name="pb_1st_temp_fall_lte_0C_33pct" value="1003" format="mmdd"></element>
+<element name="pb_1st_temp_fall_lte_0C_50pct" value="1009" format="mmdd"></element>
+<element name="pb_1st_temp_fall_lte_0C_66pct" value="1016" format="mmdd"></element>
+<element name="pb_1st_temp_fall_lte_0C_75pct" value="1019" format="mmdd"></element>
+<element name="pb_1st_temp_fall_lte_0C_90pct" value="1028" format="mmdd"></element>
+<element name="pb_frost_free_pd_lte_10pct" value="134" uom="d"></element>
+<element name="pb_frost_free_pd_lte_25pct" value="142" uom="d"></element>
+<element name="pb_frost_free_pd_lte_33pct" value="149" uom="d"></element>
+<element name="pb_frost_free_pd_lte_50pct" value="155" uom="d"></element>
+<element name="pb_frost_free_pd_lte_66pct" value="165" uom="d"></element>
+<element name="pb_frost_free_pd_lte_75pct" value="170" uom="d"></element>
+<element name="pb_frost_free_pd_lte_90pct" value="185" uom="d"></element>
+</element>
+</elements> </om:result>
+</om:Observation>
+</om:member>
+ </om:ObservationCollection>
+
