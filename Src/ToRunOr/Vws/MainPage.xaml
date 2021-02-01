@@ -128,24 +128,24 @@
 
     <TextBlock x:Name="tbError" Foreground="#e77" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" />
 
-    <AppBarButton HorizontalAlignment="Right" VerticalAlignment="Top" IsCompact="False" Icon="More"   x:Name="Play5"  Background="#4040" Foreground="#f0f0" Margin="0 120"         >
+    <AppBarButton HorizontalAlignment="Right" VerticalAlignment="Top" IsCompact="False" Icon="More"   x:Name="Play5"  Background="#4040" Foreground="#f0c0" Margin="0 120"         >
       <Button.Flyout>
         <MenuFlyout>
-          <MenuFlyoutItem																						Text="Privacy Policy" Click="onGoToPrivaPlicy"		ToolTipService.ToolTip="Privacy Policy" Foreground="#0d0" />
+          <MenuFlyoutItem																				Text="Privacy Policy" Click="onGoToPrivaPlicy"		ToolTipService.ToolTip="Privacy Policy" Foreground="#070" />
+          <ToggleMenuFlyoutItem																	Text="AntiSceenSaver" Click="onAntiSceenSaver"		ToolTipService.ToolTip="AntiSceenSaver" Foreground="#070" x:Name="tgAntiSceenSaver" DataContextChanged="tgAntiSceenSaver_DataContextChanged" IsChecked="True" />
           <MenuFlyoutSeparator Visibility="{Binding DevDbgViz}"	/>
-          <MenuFlyoutItem      Visibility="{Binding DevDbgViz}"	Text="Clear ExnMsg"		Click="onClearExeptionMsg"  ToolTipService.ToolTip="Clear tbError"	Foreground="#f44" />
-          <MenuFlyoutItem      Visibility="{Binding DevDbgViz}"	Text="Usage"					Click="onGoToDevDbgView"		ToolTipService.ToolTip="DevDbg View"		Foreground="#0f0" />
-          <MenuFlyoutItem      Visibility="{Binding DevDbgViz}"	Text="Orient Vw"			Click="onGoToOrientView"		ToolTipService.ToolTip="Orient View"		Foreground="#0f0" />
-
-          <MenuFlyoutSubItem      Visibility="{Binding DevDbgViz}" Text="Future Features..." Foreground="#0f0" >
+          <MenuFlyoutItem      Visibility="{Binding DevDbgViz}"	Text="Clear ExnMsg"		Click="onClearExeptionMsg"  ToolTipService.ToolTip="Clear tbError"	Foreground="#c00" />
+          <MenuFlyoutItem      Visibility="{Binding DevDbgViz}"	Text="Usage"					Click="onGoToDevDbgView"		ToolTipService.ToolTip="DevDbg View"		Foreground="#0a0" />
+          <MenuFlyoutItem      Visibility="{Binding DevDbgViz}"	Text="Orient Vw"			Click="onGoToOrientView"		ToolTipService.ToolTip="Orient View"		Foreground="#0a0" />
+          <MenuFlyoutSubItem   Visibility="{Binding DevDbgViz}" Text="Future Features..." Foreground="#0a0" >
             <MenuFlyoutSubItem.Items>
               <MenuFlyoutItem					Text="Xaml to Img"       Click="onGoToXamlImgFle"		ToolTipService.ToolTip="Xaml to Img"  />
               <MenuFlyoutItem					Text="Zoom Panels"       Click="onGoToZoomPanels"		ToolTipService.ToolTip="Zoom Panels"  />
               <MenuFlyoutItem					Text="Meteo Chart"       Click="onGoToMeteoChart"		ToolTipService.ToolTip="Meteo Chart"  />
               <MenuFlyoutItem					Text="2Lockscreen"       Click="onSetAsLockscreen"	ToolTipService.ToolTip="" Foreground="#00f"  />
               <MenuFlyoutSeparator  />
-              <ToggleMenuFlyoutItem Text="Privacy Policy..."     IsChecked="{Binding IsPrivacyPlcVw,  Mode=TwoWay}" ToolTipService.ToolTip="Show Privacy Policy" Foreground="#090" />
-              <ToggleMenuFlyoutItem Text="Lock Orientation"      IsChecked="{Binding IsRouteListVw, Mode=TwoWay}"  ToolTipService.ToolTip="Lock Orientation"   />
+              <ToggleMenuFlyoutItem Text="Privacy Policy..."     IsChecked="{Binding IsPrivacyPlcVw, Mode=TwoWay}" ToolTipService.ToolTip="Show Privacy Policy" Foreground="#090" />
+              <ToggleMenuFlyoutItem Text="Lock Orientation"      IsChecked="{Binding IsRouteListVw,  Mode=TwoWay}" ToolTipService.ToolTip="Lock Orientation"   />
               <ToggleMenuFlyoutItem Text="Autozoom"              IsChecked="{Binding IsOn01, Mode=TwoWay}" ToolTipService.ToolTip="Auto zoom to show the nearest bus." />
               <ToggleMenuFlyoutItem Text="Multi Stop Mode"       IsChecked="{Binding IsOn02, Mode=TwoWay}" ToolTipService.ToolTip="Include all favorite stops in 2km radius" />
               <ToggleMenuFlyoutItem Text="Audio"                 IsChecked="{Binding IsVrbl, Mode=TwoWay}" ToolTipService.ToolTip="Toggle Audio (On/Off)" />

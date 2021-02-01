@@ -42,7 +42,8 @@ namespace Cmn.Services
             var cnt = c.Count();
 
             //// Debug.WriteLine($"\n== tr.*.Count:   ChildNodes:{tr.ChildNodes.Count()}:   Descendants:{tr.Descendants().Count()}:   th:{tr.Descendants("th").Count()}:   td:{tr.Descendants("td").Count()}:   {tr.InnerHtml}");
-            //Debug.Write($"\n::> ttl: {cnt}:"); foreach (HtmlNode t in c) Debug.Write(($"  {i++}:'{t?.InnerText?.tx()}' "));
+            var i = 0;
+            Debug.Write($"\n::> ttl: {cnt}:"); foreach (HtmlNode t in c) Debug.Write(($"  {i++}:'{t?.InnerText?.tx()}' "));
 
             if (tr.Descendants("th").Count() == 1 && (tr.Descendants("th").ElementAt(0).InnerText.Trim().EndsWith(DateTime.Today.Year.ToString()) || tr.Descendants("th").ElementAt(0).InnerText.Trim().EndsWith((DateTime.Today.Year - 1).ToString())))
             {
@@ -295,6 +296,6 @@ namespace Cmn.Services
 
   public static class StrExt
   {
-    public static string tx(this string t) => t.Replace("\n", " ").Replace("\t", " ").Replace("    ", " ").Replace("   ", " ").Replace("  ", " ").Trim();
+    public static string tx(this string t) => t.Replace("\n", " ").Replace("\t", " ").Replace("    ", " ").Replace("   ", " ").Replace("  ", " ").Replace("n/a", "-1.234").Trim();
   }
 }
