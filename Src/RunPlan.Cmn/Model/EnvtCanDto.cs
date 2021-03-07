@@ -48,7 +48,7 @@ namespace Cmn.Model
     public string PeriodNm { get; set; }        // eg: Sunday, SundayNight (which is actually Monday morning), Monday
     public DateTime ObserveT { get; set; }      // datetime of PeriodNm
     public double TempActl { get; set; }
-    public int TempFeel { get; set; }
+    public double TempFeel { get; set; }
     public string WindDirn { get; set; }
     public int WindKmHr { get; set; }
     public int WindGust { get; set; }

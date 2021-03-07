@@ -6,7 +6,7 @@ namespace RadarAnimation.Cmn.Misc
 {
     public static class Mus
     {
-        public static Color TmprClr(int tf, int dtMin, int dtMax)
+        public static Color TmprClr(double tf, int dtMin, int dtMax)
         {
             byte r, g, b, k;
             var trnge = dtMax - dtMin;

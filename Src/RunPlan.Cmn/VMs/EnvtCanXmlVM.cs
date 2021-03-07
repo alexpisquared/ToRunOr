@@ -37,7 +37,7 @@ namespace VMs
     Brush _ExtrBrush;       /**/  public Brush ExtrBrush { get => _ExtrBrush; set => Set(ref _ExtrBrush, value); }
 
 
-    public int TempFeelI => _ec.TempFeel;
+    public double TempFeelI => _ec.TempFeel;
 
     public async Task Refresh()
     {

@@ -62,7 +62,6 @@ namespace ToRunOr.Vws.UCs
       _Past24 = "https://weather.gc.ca/past_conditions/index_e.html?station=ykz";            // Buttonville 
 #endif
 
-
     public UcEnvtCanHtml_PastFore24Hr_NonMvvm()
     {
       InitializeComponent();
@@ -116,10 +115,10 @@ namespace ToRunOr.Vws.UCs
         };
         Debug.WriteLine(sd);
 
-
         var hweb = new HtmlWeb();
         var p24 = await hweb.LoadFromWebAsync(_Past24);
         var f24 = await hweb.LoadFromWebAsync(_Fore24);
+        var cco = EnvtCanXmlVM.Instance;
 #if false
                 if (Debugger.IsAttached)
                     using (var client = new System.Net.Http.HttpClient { BaseAddress = new Uri(_Past24) })
@@ -133,7 +132,6 @@ namespace ToRunOr.Vws.UCs
                         Debug.WriteLine($"TRIED - DOES NOT HELP: {response}\r\n::>> Len: {response.Length} ==> {(response.Length > 500 ? "SUCCESS" : "FAILURE")} \r\n");
                         Debugger.Break();
                     }
-
 #endif
         var ecsP = Cmn.Services.EnvtCanHtmlParser.Past24hourAtButtonville(p24);
         var ecsF = Cmn.Services.EnvtCanHtmlParser.Fore24hourAtButtonville(f24);
@@ -211,6 +209,9 @@ namespace ToRunOr.Vws.UCs
           drawWindDots(ecsF, now, 50);
           drawDayNames(ecsF, now, ptsFT);
         }
+
+        drawTempDot(new EnvtCanDto { ObserveT = cco.LastUpdate, TempFeel = cco.TempActlDbl }, now, 20, 10, past: false);
+
 
 #if ___
                 ApplicationView.GetForCurrentView().Title = $"gChart.Children.Count(): {gChartM.Children.Count()}"; //..Debug.WriteLine($"{gChart.Children.Count()}"); //also: https://www.eternalcoding.com/?p=1952
@@ -556,17 +557,23 @@ namespace ToRunOr.Vws.UCs
       var rad = diam / 2;
       foreach (var ec in ecs.Where(r => Math.Abs(r.TempFeel - r.TempActl) > 1).OrderBy(r => r.ObserveT))
       {
-        var el = new Ellipse { Height = diam, Width = diam, Fill = ec.TempFeel < 0 ? brushBlue : brushRedT }; // new SolidColorBrush(Mus.TmprClr(ec.TempFeel, _tdcMin, _tdcMax)) };
-
-        if (past)
-          el.SetValue(Canvas.LeftProperty, _pxlPerMi_ * (_25hRangeInMi_ + (ec.ObserveT - now).TotalMinutes) - rad);
-        else
-          el.SetValue(Canvas.LeftProperty, _pxlPerMin * (_25hRangeInMin + (ec.ObserveT - now).TotalMinutes) - rad);
-
-        el.SetValue(Canvas.TopProperty, _crtHt - _pxlPerDeg * (ec.TempFeel - _tdcMin) - rad);
-        canvasChart.Children.Add(el);
+        drawTempDot(ec, now, diam, rad, past);
       }
     }
+
+    void drawTempDot(EnvtCanDto ec, DateTime now, int diam, int rad, bool past)
+    {
+      var el = new Ellipse { Height = diam, Width = diam, Fill = ec.TempFeel < 0 ? brushBlue : brushRedT }; // new SolidColorBrush(Mus.TmprClr(ec.TempFeel, _tdcMin, _tdcMax)) };
+
+      if (past)
+        el.SetValue(Canvas.LeftProperty, _pxlPerMi_ * (_25hRangeInMi_ + (ec.ObserveT - now).TotalMinutes) - rad);
+      else
+        el.SetValue(Canvas.LeftProperty, _pxlPerMin * (_25hRangeInMin + (ec.ObserveT - now).TotalMinutes) - rad);
+
+      el.SetValue(Canvas.TopProperty, _crtHt - _pxlPerDeg * (ec.TempFeel - _tdcMin) - rad);
+      canvasChart.Children.Add(el);
+    }
+
     void drawWindDots(List<EnvtCanDto> ecs, DateTime now, int diam)
     {
       var rad = diam / 2;

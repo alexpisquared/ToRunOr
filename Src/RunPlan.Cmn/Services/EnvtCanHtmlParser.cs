@@ -220,8 +220,6 @@ namespace Cmn.Services
       return ecdList;
     }
 
-
-
     public static List<EnvtCanDto> Fore24hourAtButtonville_(HtmlDocument doc)
     {
       var ecdList = new List<EnvtCanDto>();
