@@ -210,7 +210,9 @@ namespace ToRunOr.Vws.UCs
           drawDayNames(ecsF, now, ptsFT);
         }
 
-        drawTempDot(new EnvtCanDto { ObserveT = cco.LastUpdate, TempFeel = cco.TempActlDbl }, now, 20, 10, past: true); // 2021-03-07
+        //drawTempDot(new EnvtCanDto { ObserveT = cco.EC.ObserveT, TempFeel = cco.TempActlDbl }, now, 20, 10, past: true); // 2021-03-07
+        drawTempDot(new EnvtCanDto { ObserveT = cco.EC.ObserveT, TempFeel = cco.TempActlDbl }, now, 20, 10, past: false); // 2021-03-07
+        //drawTempDot(new EnvtCanDto { ObserveT = cco.LastUpdate, TempFeel = cco.TempActlDbl }, now, 20, 10, past: false); // 2021-03-07
 
 #if ___
                 ApplicationView.GetForCurrentView().Title = $"gChart.Children.Count(): {gChartM.Children.Count()}"; //..Debug.WriteLine($"{gChart.Children.Count()}"); //also: https://www.eternalcoding.com/?p=1952
