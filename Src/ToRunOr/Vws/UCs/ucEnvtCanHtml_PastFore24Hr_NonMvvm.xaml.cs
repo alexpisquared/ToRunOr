@@ -210,7 +210,7 @@ namespace ToRunOr.Vws.UCs
           drawDayNames(ecsF, now, ptsFT);
         }
 
-        drawTempDot(new EnvtCanDto { ObserveT = cco.EC.ObserveT, TempFeel = cco.TempActlDbl }, now, 20, 10, past: null); // 2021-03-07
+        drawTempDot(new EnvtCanDto { ObserveT = cco.EC.ObserveT, TempFeel = cco.TempActlDbl }, now, 24, 12, past: null); // 2021-03-07
 
 #if ___
                 ApplicationView.GetForCurrentView().Title = $"gChart.Children.Count(): {gChartM.Children.Count()}"; //..Debug.WriteLine($"{gChart.Children.Count()}"); //also: https://www.eternalcoding.com/?p=1952
@@ -568,7 +568,7 @@ namespace ToRunOr.Vws.UCs
         (Shape)new Ellipse { Height = diam, Width = diam, Fill = brushNowL, Stroke = brushBlck, StrokeThickness = 2 } :
         (Shape)new Ellipse { Height = diam, Width = diam, Fill = ec.TempFeel < 0 ? brushBlue : brushRedT };
 
-      if (past == true)
+      if (past != false)
         el.SetValue(Canvas.LeftProperty, _pxlPerMi_ * (_25hRangeInMi_ + (ec.ObserveT - now).TotalMinutes) - rad);
       else
         el.SetValue(Canvas.LeftProperty, _pxlPerMin * (_25hRangeInMin + (ec.ObserveT - now).TotalMinutes) - rad);
