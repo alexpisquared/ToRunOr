@@ -36,13 +36,17 @@
 
     <MediaElement x:Name="media" AutoPlay="False" />
 
-    <Image x:Name="bigPic" Margin="-200,-300,-365,-204" Source="{Binding SelectedItem.Source, ElementName=lvRadar, FallbackValue=http://weather.gc.ca/cacheable/images/radar/layers/roads/WKR_roads.gif}" />
+    <Image x:Name="bigPic" Margin="-300" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding SelectedItem.Source, ElementName=lvRadar, FallbackValue=https://weather.gc.ca/data/satellite/goes_ecan_vvi_100.jpg}" RenderTransformOrigin="0.5,0.5" >
+      <Image.RenderTransform>
+        <CompositeTransform TranslateX="84" TranslateY="-26"/>
+      </Image.RenderTransform>
+    </Image>
     <!--<Image x:Name="bigPi_" Margin="-200,-300,-365,-204" Source="http://weather.gc.ca/cacheable/images/radar/layers/roads/WKR_roads.gif" />-->
 
     <!--<TextBlock Text="{Binding ElementName=lvRadar, Path=SelectedItem.Tag, FallbackValue='12:12'}" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="Yellow" FontSize="36" />-->
 
-    <Ellipse x:Name="elMax"  Width="33" Height="33" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="#08f" />
-    <Ellipse x:Name="tkMax"  Width="31" Height="31" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="#08f" StrokeThickness="5" StrokeDashArray=".2 3.879" />
+    <Ellipse x:Name="elMax"  Width="33" Height="33" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="#ff0" />
+    <Ellipse x:Name="tkMax"  Width="31" Height="31" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="#ff0" StrokeThickness="5" StrokeDashArray=".2 3.879" />
 
     <!--<Viewbox VerticalAlignment="Bottom" Margin="0 0 0 0" Height="48">-->
     <Grid                Height="48"      VerticalAlignment="Bottom"    >

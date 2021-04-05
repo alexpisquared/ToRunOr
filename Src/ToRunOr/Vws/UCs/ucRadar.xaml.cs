@@ -150,7 +150,7 @@ namespace ToRunOr.Vws.UCs
         for (int min = _maxPastInMin; min >= 0; min -= 10)
         {
           var t10 = roundedBy10MinGmtNow.AddMinutes(-min);
-          var url = EnvCanRadarUrlHelper.GetRadarUrl(t10, stateTextBox.Text);
+          var url = EnvCanRadarUrlHelper.GetRadarUrl(t10);//, stateTextBox.Text);
           lvRadar.Items?.Add(new Image { Source = new BitmapImage(new Uri(url)), Height = 48, Tag = t10 });
         }
 
