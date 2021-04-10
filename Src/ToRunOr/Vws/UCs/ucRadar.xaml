@@ -36,7 +36,7 @@
 
     <MediaElement x:Name="media" AutoPlay="False" />
 
-    <Image x:Name="bigPic" Margin="-300" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding SelectedItem.Source, ElementName=lvRadar, FallbackValue=https://weather.gc.ca/data/satellite/goes_ecan_vvi_100.jpg}" RenderTransformOrigin="0.5,0.5" >
+    <Image x:Name="bigPic" Margin="-300" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding SelectedItem.Source, ElementName=lvRadar, FallbackValue=https://weather.gc.ca/data/satellite/goes_ecan_1070_100.jpg}" RenderTransformOrigin="0.5,0.5" >
       <Image.RenderTransform>
         <CompositeTransform TranslateX="84" TranslateY="-26"/>
       </Image.RenderTransform>
