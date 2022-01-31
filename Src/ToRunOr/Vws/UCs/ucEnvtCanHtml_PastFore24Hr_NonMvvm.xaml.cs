@@ -54,12 +54,12 @@ namespace ToRunOr.Vws.UCs
     const string
 #if true // toronto - pearson
       _Fxml24 = "https://dd.weather.gc.ca/citypage_weather/xml/ON/s0000458_e.xml",  // Toronto (descr: https://dd.weather.gc.ca/citypage_weather/xml/siteList.xml)
-      _Fore24 = "https://weather.gc.ca/forecast/hourly/on-143_metric_e.html",                // Toronto - 143,
-      _Past24 = "https://weather.gc.ca/past_conditions/index_e.html?station=yyz";            // Pearson - yyz,  
+      _Fore24 = "https://weather.gc.ca/forecast/hourly/on-143_metric_e.html",       // Toronto - 143,
+      _Past24 = "https://weather.gc.ca/past_conditions/index_e.html?station=yyz";   // Pearson - yyz,  
 #else   // markham - buttonville
       _Fxml24 = "https://dd.weather.gc.ca/citypage_weather/xml/ON/s0000585_e.xml",  // markham
-      _Fore24 = "https://weather.gc.ca/forecast/hourly/on-85_metric_e.html",                 // markham 
-      _Past24 = "https://weather.gc.ca/past_conditions/index_e.html?station=ykz";            // Buttonville 
+      _Fore24 = "https://weather.gc.ca/forecast/hourly/on-85_metric_e.html",        // markham 
+      _Past24 = "https://weather.gc.ca/past_conditions/index_e.html?station=ykz";   // Buttonville 
 #endif
 
     public UcEnvtCanHtml_PastFore24Hr_NonMvvm()
@@ -133,7 +133,7 @@ namespace ToRunOr.Vws.UCs
                         Debugger.Break();
                     }
 #endif
-        var ecsP = Cmn.Services.EnvtCanHtmlParser.Past24hourAtButtonville(p24);
+        var ecsP = Cmn.Services.EnvtCanHtmlParser.Past24hr(p24);
         var ecsF = Cmn.Services.EnvtCanHtmlParser.Fore24hourAtButtonville(f24);
 
         await checkAddMostRecentMeasure(ecsP);

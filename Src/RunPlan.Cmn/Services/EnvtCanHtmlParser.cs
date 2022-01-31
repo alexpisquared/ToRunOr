@@ -12,7 +12,7 @@ namespace Cmn.Services
   {
     const double TOLERANCE = .01;
 
-    public static List<EnvtCanDto> Past24hourAtButtonville(HtmlDocument doc)
+    public static List<EnvtCanDto> Past24hr(HtmlDocument doc) // 2020--   Raw (non-HAP)
     {
       var ecdList = new List<EnvtCanDto>();
       // http://embedded101.com/Blogs/David-Jones/entryid/739/Universal-Windows-10-Screen-Scraping-a-Table-into-a-List
