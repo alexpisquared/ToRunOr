@@ -13,14 +13,18 @@ namespace ToRunOr.Vws.UCs
       this.InitializeComponent();
       if (Windows.ApplicationModel.DesignMode.DesignModeEnabled) return;
 
-      _timer.Tick += (s, e) => ontick();
+      _timer.Tick += (s, e) => OnTick();
       _timer.Start();
     }
-    async void ontick()
+    async void OnTick()
     {
       try
       {
-        const int bigPeriod = 15;
+#if DEBUG
+        const int bigPeriodSec = 10;
+#else
+        const int bigPeriodSec = 20;
+#endif
         var now = DateTime.Now;
         var ts = now - MainPage.StartTime;
 
@@ -36,11 +40,20 @@ namespace ToRunOr.Vws.UCs
         swTime.Text = $"{now:H:mm:ss}";
 
         int sec = (int)ts.TotalSeconds;
-        if (sec < 1) return;
+        if (sec < 1)
+          return;
         else if (sec % 60 == 0)
           await ucRadar.Speak0(media, $"{ts.Minutes} minute{(ts.Minutes > 1 ? "s" : "")}");
-        else if (sec % bigPeriod == 0)
+        else if (sec % bigPeriodSec == 0)
+        {
           await ucRadar.Speak0(media, sec <= 60 ? $"{sec} seconds" : $"{ts.Minutes} minute{(ts.Minutes > 1 ? "s" : "")} {ts.Seconds} seconds");
+          // play Alarm01.wav file from Assets folder:
+          var folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
+          var file = await folder.GetFileAsync("Alarm01.wav");
+          var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+          media.SetSource(stream, file.ContentType);
+          media.Play();
+        }
       }
       catch (Exception ex) { System.Diagnostics.Debug.WriteLine(ex.Message, "time()"); if (System.Diagnostics.Debugger.IsAttached) System.Diagnostics.Debugger.Break(); throw; }
     }
