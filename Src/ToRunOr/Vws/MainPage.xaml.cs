@@ -37,9 +37,9 @@ namespace ToRunOr
 
 #if DEBUG
       Loaded += async (s, e) => { if (!WinTileHelper.IsPinned) await WinTileHelper.PinTile(s); };
-      ApplicationView.GetForCurrentView().Title = tbVer.Text = $@"Dbg: {AppVersion}   ({DevOp.BuildTime(typeof(App)):yyyy-MM-dd})";
+      ApplicationView.GetForCurrentView().Title = tbVer.Text = $@"Dbg: {AppVersion}   {DevOp.BuildTime(typeof(App)):yyyy-MM-dd}";
 #else
-            ApplicationView.GetForCurrentView().Title = tbVer.Text = $@"Version: {AppVersion}   ({DevOp.BuildTime(typeof(App)):yyyy-MM-dd})";
+            ApplicationView.GetForCurrentView().Title = tbVer.Text = $@"Version: {AppVersion}   {DevOp.BuildTime(typeof(App)):yyyy-MM-dd} ";
 #endif
 
       NavigationCacheMode = NavigationCacheMode.Required; // I want this page to be always cached so that we don't have to add logic to save/restore state for the checkbox. //C:\gh\Windows - universal - samples\Samples\BackButton\cs\Scenario1.xaml.cs

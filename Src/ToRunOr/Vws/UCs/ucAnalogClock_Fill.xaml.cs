@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
+using Windows.Devices.Power;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -22,12 +24,8 @@ namespace ToRunOr.Vws.UCs
     {
       try
       {
-        const int playPeriodInMin =
-#if DEBUG
-          10;
-#else
-         15;
-#endif
+        const int audioWindowSec = 8;
+
         var now = DateTime.Now;
 
         tH.Rotation = now.Hour * 30 + now.Minute / 2;
@@ -41,36 +39,72 @@ namespace ToRunOr.Vws.UCs
         swSwch.Text = "· ·";
         swTime.Text = $"{now:H:mm:ss}";
 
-        var secondsLeft = (playPeriodInMin - now.Minute % playPeriodInMin) * 60 + 60 - now.Second;
+        var secondsLeft = (playPeriodInMin - now.Minute % playPeriodInMin) * 60 - 60 + now.Second;
 
         pb1.Maximum = playPeriodInMin * 60;
         pb1.Value = now.Minute % playPeriodInMin * 60 + now.Second;
 
-        if (now.Second > 5 || _isTalking)
+        if (!_isTalking)
+          pb1.Foreground = secondsLeft < 60 ? new Windows.UI.Xaml.Media.SolidColorBrush(secondsLeft % 2 == 0 ? Windows.UI.Colors.Red : Windows.UI.Colors.DarkOrange) : new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkMagenta);
+
+        if (now.Second > audioWindowSec || _isTalking)
           return;
+
+        pb1.Foreground = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkGreen);
 
         _isTalking = true;
         var minutesLeft = playPeriodInMin - now.Minute % playPeriodInMin;
         if (now.Minute % playPeriodInMin != 0)
+        {
+          await PlayWav("Start - Arcade Power Up.wav");
+          await Task.Delay(0_780);
           await ucRadar.Speak0(media, $"{minutesLeft} minute{(minutesLeft > 1 ? "s" : "")} left");
+        }
         else
         {
-          await ucRadar.Speak0(media, "Time to change!");
-          // play Alarm01.wav file from Assets folder:
-          var folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
-          var file = await folder.GetFileAsync("Good - Fanfare.wav");
-          var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
-          media.SetSource(stream, file.ContentType);
-          media.Play();
-          await Task.Delay(5_000);
+          await PlayWav("Good - Fanfare.wav");
+          await Task.Delay(5_800);
           await ucRadar.Speak0(media, "Time to change!");
         }
 
-        await Task.Delay(5_000);
-        _isTalking = false;
+        pb1.Foreground = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkViolet);
 
+        tbBattery.Text = GetBattery();
+
+        await Task.Delay(audioWindowSec * 1_000);
+        _isTalking = false;
       }
-      catch (Exception ex) { System.Diagnostics.Debug.WriteLine(ex.Message, "time()"); if (System.Diagnostics.Debugger.IsAttached) System.Diagnostics.Debugger.Break(); throw; }
+      catch (Exception ex) { Debug.WriteLine(ex.Message, "time()"); if (Debugger.IsAttached) Debugger.Break(); throw; }
     }
+
+    string GetBattery()
+    {
+      var batteryReport = Battery.AggregateBattery.GetReport();
+      var percentLeft = batteryReport.FullChargeCapacityInMilliwattHours == null ||
+          batteryReport.FullChargeCapacityInMilliwattHours.Value == 0 ||
+          batteryReport.RemainingCapacityInMilliwattHours == null ? 0 : 100d * batteryReport.RemainingCapacityInMilliwattHours.Value / batteryReport.FullChargeCapacityInMilliwattHours.Value;
+
+      pbBattery.Value = 100 - percentLeft;
+
+      return $"{percentLeft,3:N0} %";
+    }
+
+    async Task PlayWav(string v)
+    {
+      // play Alarm01.wav file from Assets folder:
+      var folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
+      var file = await folder.GetFileAsync(v);
+      var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+      media.SetSource(stream, file.ContentType);
+      //media.Play();
+    }
+
+    void OnChangePeriod(object s, RoutedEventArgs e)
+    {
+      playPeriodInMin = int.Parse(((RadioButton)s).Content.ToString());
+      pb1.Maximum = playPeriodInMin * 60;
+    }
+
+    int playPeriodInMin = 10;
   }
 }

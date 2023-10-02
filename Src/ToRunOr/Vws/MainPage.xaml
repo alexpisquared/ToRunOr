@@ -27,7 +27,6 @@
             <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
           </VisualState.StateTriggers>
           <Storyboard>
-            <!--<PopInThemeAnimation  Storyboard.TargetName="ucRadarMap"	/>-->
             <PopInThemeAnimation  Storyboard.TargetName="pnlGrad"		/>
             <PopInThemeAnimation  Storyboard.TargetName="pnlWind"		/>
             <PopInThemeAnimation  Storyboard.TargetName="pnlAnaClokSml"	/>
@@ -46,11 +45,10 @@
             <Setter Target="ucRadarMap.Margin"								Value="0" />
           </VisualState.Setters>
           <Storyboard>
-            <!--<PopOutThemeAnimation  Storyboard.TargetName="ucRadarMap"	/>-->
-            <PopOutThemeAnimation  Storyboard.TargetName="pnlGrad"		/>
-            <PopOutThemeAnimation  Storyboard.TargetName="pnlWind"		/>
-            <PopOutThemeAnimation  Storyboard.TargetName="pnlAnaClokSml"	/>
-            <PopOutThemeAnimation  Storyboard.TargetName="pnlAnaClokBig"	/>
+            <PopOutThemeAnimation Storyboard.TargetName="pnlGrad"		/>
+            <PopOutThemeAnimation Storyboard.TargetName="pnlWind"		/>
+            <PopOutThemeAnimation Storyboard.TargetName="pnlAnaClokSml"	/>
+            <PopOutThemeAnimation Storyboard.TargetName="pnlAnaClokBig"	/>
           </Storyboard>
         </VisualState>
 
@@ -59,6 +57,7 @@
             <PopOutThemeAnimation Storyboard.TargetName="pnlGrad"		/>
             <PopOutThemeAnimation Storyboard.TargetName="pnlWind"		/>
             <PopOutThemeAnimation Storyboard.TargetName="ucRadarMap"	  />
+            <PopInThemeAnimation  Storyboard.TargetName="ucRadarRec"	  />
             <PopOutThemeAnimation Storyboard.TargetName="pnlAnaClokSml"	/>
             <PopOutThemeAnimation Storyboard.TargetName="pnlChart24"	/>
             <!--<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlChart24"	Storyboard.TargetProperty="Opacity" To="0" /> seems smoother than PopOutThemeAnimation -->
@@ -73,6 +72,7 @@
         <VisualState x:Name="ucAnalogClock_VS_Max" >
           <Storyboard>
             <PopInThemeAnimation  Storyboard.TargetName="ucRadarMap"	  />
+            <PopOutThemeAnimation Storyboard.TargetName="ucRadarRec"	  />
             <PopInThemeAnimation  Storyboard.TargetName="pnlAnaClokSml"	/>
             <PopInThemeAnimation  Storyboard.TargetName="pnlChart24"	  />
             <PopOutThemeAnimation Storyboard.TargetName="pnlAnaClokBig"	/>
@@ -87,6 +87,7 @@
         <VisualState x:Name="AbNormal_FadeIn" >
           <Storyboard>
             <FadeInThemeAnimation  Storyboard.TargetName="ucRadarMap"	  />
+            <FadeOutThemeAnimation Storyboard.TargetName="ucRadarRec"	  />
             <FadeInThemeAnimation  Storyboard.TargetName="pnlAnaClokSml"	/>
             <FadeInThemeAnimation  Storyboard.TargetName="pnlChart24"	  />
           </Storyboard>
@@ -94,11 +95,6 @@
 
       </VisualStateGroup>
     </VisualStateManager.VisualStateGroups>
-
-    <!--middle bottom rect blocker-->
-    <UCs:ucAnalogClock_Fill x:Name="pnlAnaClokBig" />
-
-    <TextBlock x:Name="tbVer" HorizontalAlignment="Right" Margin="0"     Text="Ver" VerticalAlignment="Top" FontSize="11" Foreground="#0af" />
 
     <UCs:ucRadar x:Name="ucRadarMap" MaxHeight="1080" MaxWidth="1920" VerticalAlignment="Center" HorizontalAlignment="Center" />
 
@@ -117,6 +113,10 @@
     <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch"   VerticalAlignment="Bottom" x:Name="pnlChart24" >
       <UCs:UcEnvtCanHtml_PastFore24Hr_NonMvvm />
     </Viewbox>
+
+    <Rectangle   x:Name="ucRadarRec" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="#303" />
+    <!--middle bottom rect blocker-->
+    <UCs:ucAnalogClock_Fill x:Name="pnlAnaClokBig" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="8" />
 
     <Grid                 Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Center"  VerticalAlignment="Top"   x:Name="pnlAnaClokSml">
       <Viewbox Margin="5" >
@@ -160,6 +160,8 @@
     <AppBarButton Visibility="{Binding DevDbgViz}" Icon="Admin"  Click="onGoToDevDbgView"   ToolTipService.ToolTip="DevDbg View"   HorizontalAlignment="Right" VerticalAlignment="Top" IsCompact="False" Background="#4040" Foreground="#f0f0" Margin="0 260 0 0"         />
 
     <UCs:ucPrivacyPolicy Visibility="Collapsed" />
+
+    <TextBlock x:Name="tbVer" HorizontalAlignment="Right" Margin="16 8"     Text="Ver" VerticalAlignment="Top" FontSize="16" Foreground="#0af" />
 
   </Grid>
 </Page>
