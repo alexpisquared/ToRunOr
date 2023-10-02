@@ -178,6 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Alarm01.wav" />
+    <Content Include="Assets\Good - Fanfare.wav" />
     <Content Include="ReadMe.md" />
     <None Include="Package.StoreAssociation.xml" />
     <Content Include="Assets\CellData.html" />

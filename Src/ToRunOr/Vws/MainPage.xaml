@@ -31,7 +31,6 @@
             <PopInThemeAnimation  Storyboard.TargetName="pnlGrad"		/>
             <PopInThemeAnimation  Storyboard.TargetName="pnlWind"		/>
             <PopInThemeAnimation  Storyboard.TargetName="pnlAnaClokSml"	/>
-            <!--<PopInThemeAnimation  Storyboard.TargetName="pnlAnaClokBig"	/>-->
           </Storyboard>
         </VisualState>
 
@@ -57,10 +56,11 @@
 
         <VisualState x:Name="ucAnalogClock_VS_Min">
           <Storyboard>
+            <PopOutThemeAnimation Storyboard.TargetName="pnlGrad"		/>
+            <PopOutThemeAnimation Storyboard.TargetName="pnlWind"		/>
             <PopOutThemeAnimation Storyboard.TargetName="ucRadarMap"	  />
             <PopOutThemeAnimation Storyboard.TargetName="pnlAnaClokSml"	/>
             <PopOutThemeAnimation Storyboard.TargetName="pnlChart24"	/>
-            <!--<PopInThemeAnimation  Storyboard.TargetName="pnlAnaClokBig"	/>-->
             <!--<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlChart24"	Storyboard.TargetProperty="Opacity" To="0" /> seems smoother than PopOutThemeAnimation -->
             <!--<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlAnaClokSml"	Storyboard.TargetProperty="Height"  To="520" EnableDependentAnimation="True" />
 						<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlAnaClokSml"	Storyboard.TargetProperty="Width"   To="380" EnableDependentAnimation="True" >
@@ -89,7 +89,6 @@
             <FadeInThemeAnimation  Storyboard.TargetName="ucRadarMap"	  />
             <FadeInThemeAnimation  Storyboard.TargetName="pnlAnaClokSml"	/>
             <FadeInThemeAnimation  Storyboard.TargetName="pnlChart24"	  />
-            <!--<FadeInThemeAnimation  Storyboard.TargetName="pnlAnaClokBig"	/>-->
           </Storyboard>
         </VisualState>
 
@@ -126,7 +125,7 @@
       <AppBarToggleButton Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"    HorizontalAlignment="Center"  VerticalAlignment="Top"   Icon="ZoomIn" Checked="onMax"  Unchecked="onMin" x:Name="ucAnalogClock" Label="00:00" />
     </Grid>
 
-    <TextBlock x:Name="tbError" Foreground="#e77" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" />
+    <TextBlock x:Name="tbError" Foreground="#fc0" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" />
 
     <AppBarButton HorizontalAlignment="Right" VerticalAlignment="Top" IsCompact="False" Icon="More"   x:Name="Play5"  Background="#4040" Foreground="#f0c0" Margin="0 120"         >
       <Button.Flyout>

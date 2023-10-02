@@ -22,11 +22,11 @@ namespace ToRunOr.Vws.UCs
     {
       try
       {
-        const int playPeriodInMin = 
+        const int playPeriodInMin =
 #if DEBUG
-          2;
+          10;
 #else
-         10;
+         15;
 #endif
         var now = DateTime.Now;
 
@@ -41,6 +41,11 @@ namespace ToRunOr.Vws.UCs
         swSwch.Text = "· ·";
         swTime.Text = $"{now:H:mm:ss}";
 
+        var secondsLeft = (playPeriodInMin - now.Minute % playPeriodInMin) * 60 + 60 - now.Second;
+
+        pb1.Maximum = playPeriodInMin * 60;
+        pb1.Value = now.Minute % playPeriodInMin * 60 + now.Second;
+
         if (now.Second > 5 || _isTalking)
           return;
 
@@ -50,15 +55,17 @@ namespace ToRunOr.Vws.UCs
           await ucRadar.Speak0(media, $"{minutesLeft} minute{(minutesLeft > 1 ? "s" : "")} left");
         else
         {
-          await ucRadar.Speak0(media, "No panic! Just change.");
+          await ucRadar.Speak0(media, "Time to change!");
           // play Alarm01.wav file from Assets folder:
           var folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
-          var file = await folder.GetFileAsync("Alarm01.wav");
+          var file = await folder.GetFileAsync("Good - Fanfare.wav");
           var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
           media.SetSource(stream, file.ContentType);
           media.Play();
+          await Task.Delay(5_000);
+          await ucRadar.Speak0(media, "Time to change!");
         }
-          
+
         await Task.Delay(5_000);
         _isTalking = false;
 

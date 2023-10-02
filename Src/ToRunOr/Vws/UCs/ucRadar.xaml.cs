@@ -189,7 +189,7 @@ namespace ToRunOr.Vws.UCs
             medEl.AutoPlay = true;
             medEl.SetSource(speechSynthesisStream, speechSynthesisStream.ContentType);
             medEl.Play();
-            await Task.Delay(1500);
+            await Task.Delay(1_500);
           }
           catch (System.IO.FileNotFoundException)
           {
