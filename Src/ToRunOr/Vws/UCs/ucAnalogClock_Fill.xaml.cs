@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -7,6 +8,7 @@ namespace ToRunOr.Vws.UCs
   public partial class ucAnalogClock_Fill : UserControl
   {
     DispatcherTimer _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+    private bool _isTalking;
 
     public ucAnalogClock_Fill()
     {
@@ -20,13 +22,13 @@ namespace ToRunOr.Vws.UCs
     {
       try
       {
+        const int playPeriodInMin = 
 #if DEBUG
-        const int bigPeriodSec = 10;
+          2;
 #else
-        const int bigPeriodSec = 20;
+         10;
 #endif
         var now = DateTime.Now;
-        var ts = now - MainPage.StartTime;
 
         tH.Rotation = now.Hour * 30 + now.Minute / 2;
         //tM.Rotation = now.Minute * 6 + now.Second / 10;
@@ -36,17 +38,19 @@ namespace ToRunOr.Vws.UCs
         edkfMinEnd.Value = 360 + (edkfMinBgn.Value = now.Minute * 6 + now.Second * .1);
         //kfHouEnd.Value = 360 + (edkfHouBgn.Value = (now.Hour - 12) * 30 + now.Minute * .5);
 
-        swSwch.Text = ts < TimeSpan.FromHours(1) ? $"{ts:m\\:ss}" : $"{ts:h\\:mm\\:ss}";
+        swSwch.Text = "· ·";
         swTime.Text = $"{now:H:mm:ss}";
 
-        int sec = (int)ts.TotalSeconds;
-        if (sec < 1)
+        if (now.Second > 5 || _isTalking)
           return;
-        else if (sec % 60 == 0)
-          await ucRadar.Speak0(media, $"{ts.Minutes} minute{(ts.Minutes > 1 ? "s" : "")}");
-        else if (sec % bigPeriodSec == 0)
+
+        _isTalking = true;
+        var minutesLeft = playPeriodInMin - now.Minute % playPeriodInMin;
+        if (now.Minute % playPeriodInMin != 0)
+          await ucRadar.Speak0(media, $"{minutesLeft} minute{(minutesLeft > 1 ? "s" : "")} left");
+        else
         {
-          await ucRadar.Speak0(media, sec <= 60 ? $"{sec} seconds" : $"{ts.Minutes} minute{(ts.Minutes > 1 ? "s" : "")} {ts.Seconds} seconds");
+          await ucRadar.Speak0(media, "No panic! Just change.");
           // play Alarm01.wav file from Assets folder:
           var folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
           var file = await folder.GetFileAsync("Alarm01.wav");
@@ -54,6 +58,10 @@ namespace ToRunOr.Vws.UCs
           media.SetSource(stream, file.ContentType);
           media.Play();
         }
+          
+        await Task.Delay(5_000);
+        _isTalking = false;
+
       }
       catch (Exception ex) { System.Diagnostics.Debug.WriteLine(ex.Message, "time()"); if (System.Diagnostics.Debugger.IsAttached) System.Diagnostics.Debugger.Break(); throw; }
     }
