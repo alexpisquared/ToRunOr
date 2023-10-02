@@ -179,6 +179,8 @@
   <ItemGroup>
     <Content Include="Assets\Alarm01.wav" />
     <Content Include="Assets\Good - Fanfare.wav" />
+    <Content Include="Assets\pluck-pcm16.wav" />
+    <Content Include="Assets\PopBest.wav" />
     <Content Include="Assets\Start - Arcade Power Up.wav" />
     <Content Include="ReadMe.md" />
     <None Include="Package.StoreAssociation.xml" />

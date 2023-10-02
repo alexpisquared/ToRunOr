@@ -9,13 +9,17 @@ namespace ToRunOr.Vws.UCs
 {
   public partial class ucAnalogClock_Fill : UserControl
   {
-    DispatcherTimer _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+    readonly DispatcherTimer _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
     private bool _isTalking;
 
     public ucAnalogClock_Fill()
     {
       this.InitializeComponent();
       if (Windows.ApplicationModel.DesignMode.DesignModeEnabled) return;
+
+#if !DEBUG
+      rbDbg3.Visibility = Visibility.Collapsed;
+#endif
 
       _timer.Tick += (s, e) => OnTick();
       _timer.Start();
@@ -28,21 +32,21 @@ namespace ToRunOr.Vws.UCs
 
         var now = DateTime.Now;
 
-        tH.Rotation = now.Hour * 30 + now.Minute / 2;
+        tH.Rotation = (now.Hour * 30) + (now.Minute / 2);
         //tM.Rotation = now.Minute * 6 + now.Second / 10;
         //tS.Rotation = now.Second * 6 + now.Millisecond * .006;
 
         edkfSecEnd.Value = 360 + (edkfSecBgn.Value = now.Second * 6);
-        edkfMinEnd.Value = 360 + (edkfMinBgn.Value = now.Minute * 6 + now.Second * .1);
+        edkfMinEnd.Value = 360 + (edkfMinBgn.Value = (now.Minute * 6) + (now.Second * .1));
         //kfHouEnd.Value = 360 + (edkfHouBgn.Value = (now.Hour - 12) * 30 + now.Minute * .5);
 
         swSwch.Text = "· ·";
         swTime.Text = $"{now:H:mm:ss}";
 
-        var secondsLeft = (playPeriodInMin - now.Minute % playPeriodInMin) * 60 - 60 + now.Second;
+        var secondsLeft = ((playPeriodInMin - (now.Minute % playPeriodInMin)) * 60) - 60 + now.Second;
 
         pb1.Maximum = playPeriodInMin * 60;
-        pb1.Value = now.Minute % playPeriodInMin * 60 + now.Second;
+        pb1.Value = (now.Minute % playPeriodInMin * 60) + now.Second;
 
         if (!_isTalking)
           pb1.Foreground = secondsLeft < 60 ? new Windows.UI.Xaml.Media.SolidColorBrush(secondsLeft % 2 == 0 ? Windows.UI.Colors.Red : Windows.UI.Colors.DarkOrange) : new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkMagenta);
@@ -50,24 +54,26 @@ namespace ToRunOr.Vws.UCs
         if (now.Second > audioWindowSec || _isTalking)
           return;
 
-        pb1.Foreground = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkGreen);
-
         _isTalking = true;
-        var minutesLeft = playPeriodInMin - now.Minute % playPeriodInMin;
-        if (now.Minute % playPeriodInMin != 0)
+        var minutesLeft = playPeriodInMin - (now.Minute % playPeriodInMin);
+        if (now.Minute % playPeriodInMin == playPeriodInMin - 1)
         {
           await PlayWav("Start - Arcade Power Up.wav");
           await Task.Delay(0_780);
-          await ucRadar.Speak0(media, $"{minutesLeft} minute{(minutesLeft > 1 ? "s" : "")} left");
+          await ucRadar.Speak0(media, $"Last minute!");
         }
-        else
+        else if (now.Minute % playPeriodInMin == 0)
         {
           await PlayWav("Good - Fanfare.wav");
           await Task.Delay(5_800);
           await ucRadar.Speak0(media, "Time to change!");
         }
-
-        pb1.Foreground = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkViolet);
+        else if (now.Minute % playPeriodInMin != 0 && chSayMinutes.IsChecked == true)
+        {
+          await PlayWav("PopBest.wav");
+          await Task.Delay(0_780);
+          await ucRadar.Speak0(media, $"{minutesLeft} minute{(minutesLeft > 1 ? "s" : "")} left");
+        }
 
         tbBattery.Text = GetBattery();
 

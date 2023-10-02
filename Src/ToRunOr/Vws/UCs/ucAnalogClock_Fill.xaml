@@ -133,17 +133,17 @@
       <TextBlock Text="18:32" x:Name="swTime" Foreground="#ff0" Margin="2 0 0 0" FontFamily="Arial Narrow" FontWeight="Medium" Width="63" />
     </Viewbox>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Padding="20">
-      <TextBlock  Text="Minutes:" Margin="0 6 18 0"    FontSize="20" Foreground="#ff0" />
-      <RadioButton Content="2"  Click="OnChangePeriod" FontSize="20" Foreground="#ff0" />
-      <RadioButton Content="10" Click="OnChangePeriod" FontSize="20" Foreground="#ff0" IsChecked="True"/>
-      <RadioButton Content="15" Click="OnChangePeriod" FontSize="20" Foreground="#ff0" />
-      <RadioButton Content="20" Click="OnChangePeriod" FontSize="20" Foreground="#ff0" />
-      <RadioButton Content="30" Click="OnChangePeriod" FontSize="20" Foreground="#ff0" />
+      <TextBlock  Text="Minutes:" Margin="0 6 18 0"    />
+      <RadioButton Content="3"  Click="OnChangePeriod" x:Name="rbDbg3"/>
+      <RadioButton Content="10" Click="OnChangePeriod" IsChecked="True"/>
+      <RadioButton Content="15" Click="OnChangePeriod" />
+      <RadioButton Content="20" Click="OnChangePeriod" />
+      <CheckBox    Content="Say Min"                   x:Name="chSayMinutes" />
     </StackPanel>
 
-    <ProgressBar x:Name="pbBattery" Value="33"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="16 8" Width="130" Height="50" Foreground="#005" Background="#00b" />
-    <Rectangle                                  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8 22" Width="8"   Height="20"       Fill="#005" />
-    <TextBlock   x:Name="tbBattery" Text="88 %" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="36 8" FontSize="32" Foreground="#ccc" />
+    <ProgressBar x:Name="pbBattery" Value="08"   VerticalAlignment="Top" HorizontalAlignment="Left" Margin="16 8" Width="130" Height="50" Foreground="#005" Background="#00b" />
+    <Rectangle                                   VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8 22" Width="8"   Height="20"       Fill="#005" />
+    <TextBlock   x:Name="tbBattery" Text="  8 %" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="36 8" FontSize="32" Foreground="#ccc" />
   </Grid>
 </UserControl>
  

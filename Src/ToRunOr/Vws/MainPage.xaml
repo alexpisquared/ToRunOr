@@ -60,13 +60,6 @@
             <PopInThemeAnimation  Storyboard.TargetName="ucRadarRec"	  />
             <PopOutThemeAnimation Storyboard.TargetName="pnlAnaClokSml"	/>
             <PopOutThemeAnimation Storyboard.TargetName="pnlChart24"	/>
-            <!--<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlChart24"	Storyboard.TargetProperty="Opacity" To="0" /> seems smoother than PopOutThemeAnimation -->
-            <!--<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlAnaClokSml"	Storyboard.TargetProperty="Height"  To="520" EnableDependentAnimation="True" />
-						<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlAnaClokSml"	Storyboard.TargetProperty="Width"   To="380" EnableDependentAnimation="True" >
-							<DoubleAnimation.EasingFunction>
-								<SineEase EasingMode="EaseIn"/>
-							</DoubleAnimation.EasingFunction>
-						</DoubleAnimation>-->
           </Storyboard>
         </VisualState>
         <VisualState x:Name="ucAnalogClock_VS_Max" >
@@ -76,12 +69,6 @@
             <PopInThemeAnimation  Storyboard.TargetName="pnlAnaClokSml"	/>
             <PopInThemeAnimation  Storyboard.TargetName="pnlChart24"	  />
             <PopOutThemeAnimation Storyboard.TargetName="pnlAnaClokBig"	/>
-            <!--<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlAnaClokSml"	Storyboard.TargetProperty="Height"  To="{StaticResource MinSizeWH}" EnableDependentAnimation="True" />
-						<DoubleAnimation Duration="0:0:.5" Storyboard.TargetName="pnlAnaClokSml"	Storyboard.TargetProperty="Width"   To="{StaticResource MinSizeWH}" EnableDependentAnimation="True" >
-							<DoubleAnimation.EasingFunction>
-								<SineEase EasingMode="EaseOut"/>
-							</DoubleAnimation.EasingFunction>
-						</DoubleAnimation>-->
           </Storyboard>
         </VisualState>
         <VisualState x:Name="AbNormal_FadeIn" >
@@ -114,9 +101,9 @@
       <UCs:UcEnvtCanHtml_PastFore24Hr_NonMvvm />
     </Viewbox>
 
-    <Rectangle   x:Name="ucRadarRec" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="#303" />
+    <Rectangle   x:Name="ucRadarRec" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="#ff0" />
     <!--middle bottom rect blocker-->
-    <UCs:ucAnalogClock_Fill x:Name="pnlAnaClokBig" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="8" />
+    <UCs:ucAnalogClock_Fill x:Name="pnlAnaClokBig" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="1" />
 
     <Grid                 Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Center"  VerticalAlignment="Top"   x:Name="pnlAnaClokSml">
       <Viewbox Margin="5" >
