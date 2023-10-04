@@ -41,12 +41,12 @@ namespace ToRunOr.Vws.UCs
         //kfHouEnd.Value = 360 + (edkfHouBgn.Value = (now.Hour - 12) * 30 + now.Minute * .5);
 
         swSwch.Text = "· ·";
-        swTime.Text = $"{now:H:mm:ss}";
 
         var secondsLeft = ((playPeriodInMin - (now.Minute % playPeriodInMin)) * 60) - 60 + now.Second;
-
+        
         pb1.Maximum = playPeriodInMin * 60;
         pb1.Value = (now.Minute % playPeriodInMin * 60) + now.Second;
+        swTime.Text = $"{TimeSpan.FromSeconds(pb1.Maximum-pb1.Value):m\\:ss}";
 
         if (!_isTalking)
           pb1.Foreground = secondsLeft < 60 ? new Windows.UI.Xaml.Media.SolidColorBrush(secondsLeft % 2 == 0 ? Windows.UI.Colors.Red : Windows.UI.Colors.DarkOrange) : new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkMagenta);

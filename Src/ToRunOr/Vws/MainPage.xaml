@@ -101,9 +101,9 @@
       <UCs:UcEnvtCanHtml_PastFore24Hr_NonMvvm />
     </Viewbox>
 
-    <Rectangle   x:Name="ucRadarRec" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="#ff0" />
+    <Rectangle   x:Name="ucRadarRec" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="#f0f" />
     <!--middle bottom rect blocker-->
-    <UCs:ucAnalogClock_Fill x:Name="pnlAnaClokBig" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="1" />
+    <UCs:ucAnalogClock_Fill x:Name="pnlAnaClokBig" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0" />
 
     <Grid                 Width="{StaticResource MinSizeWH}" Height="{StaticResource MinSizeWH}"      HorizontalAlignment="Center"  VerticalAlignment="Top"   x:Name="pnlAnaClokSml">
       <Viewbox Margin="5" >
