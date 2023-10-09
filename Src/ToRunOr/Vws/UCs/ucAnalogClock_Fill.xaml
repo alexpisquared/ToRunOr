@@ -143,7 +143,7 @@
     <Viewbox VerticalAlignment="Top">
     </Viewbox>
     <Viewbox >
-      <TextBlock Text="18:32" x:Name="swTime" Foreground="#ff0" Margin="2 0 2 1" FontFamily="Consolas" FontWeight="ExtraBlack"  />
+      <TextBlock Text="18:32" x:Name="swTime" Foreground="#ff0" Margin="2 0 2 1" FontFamily="Courier New" FontWeight="ExtraBlack"  />
     </Viewbox>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Padding="20">
       <CheckBox    Content="Say Minutes"               x:Name="chSayMinutes" Margin="0 0 30 0"/>
