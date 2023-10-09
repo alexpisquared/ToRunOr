@@ -114,7 +114,7 @@
 
     <TextBlock x:Name="tbError" Foreground="#fc0" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" />
 
-    <AppBarButton HorizontalAlignment="Right" VerticalAlignment="Top" IsCompact="False" Icon="More"   x:Name="Play5"  Background="#4040" Foreground="#f0c0" Margin="0 120"         >
+    <AppBarButton HorizontalAlignment="Right" VerticalAlignment="Bottom" IsCompact="False" Icon="More"   x:Name="Play5"  Background="#4040" Foreground="#f0c0" Margin="0"         >
       <Button.Flyout>
         <MenuFlyout>
           <MenuFlyoutItem																				Text="Privacy Policy" Click="onGoToPrivaPlicy"		ToolTipService.ToolTip="Privacy Policy" Foreground="#070" />

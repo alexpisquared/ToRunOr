@@ -126,26 +126,31 @@
       <TextBlock Text="18:32" VerticalAlignment="Top"    HorizontalAlignment="Center" FontSize="64" x:Name="swSwch" Foreground="#f84" Visibility="Collapsed" />
     </Grid>
 
-    <ProgressBar Foreground="#500" Value="33" VerticalAlignment="Stretch" x:Name="pb1" >
+    <ProgressBar Value="33" VerticalAlignment="Stretch" x:Name="pb1" >
+      <ProgressBar.Foreground>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+          <GradientStop Color="#a06" Offset="0" />
+          <GradientStop Color="#302" Offset="1" />
+        </LinearGradientBrush>
+      </ProgressBar.Foreground>
       <ProgressBar.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-          <GradientStop Color="#0a0" Offset="0" />
-          <GradientStop Color="#030" Offset="1" />
+          <GradientStop Color="#091" Offset="0" />
+          <GradientStop Color="#021" Offset="1" />
         </LinearGradientBrush>
       </ProgressBar.Background>
     </ProgressBar>
     <Viewbox VerticalAlignment="Top">
     </Viewbox>
-    <Viewbox VerticalAlignment="Stretch">
-      <TextBlock Text="18:32" x:Name="swTime" Foreground="#ff0" Margin="2 0 2 0" FontFamily="Consolas" FontWeight="Medium" />
+    <Viewbox >
+      <TextBlock Text="18:32" x:Name="swTime" Foreground="#ff0" Margin="2 0 2 1" FontFamily="Consolas" FontWeight="ExtraBlack"  />
     </Viewbox>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Padding="20">
-      <TextBlock  Text="Minutes:" Margin="0 6 18 0"    />
-      <RadioButton Content="3"  Click="OnChangePeriod" x:Name="rbDbg3"/>
+      <CheckBox    Content="Say Minutes"               x:Name="chSayMinutes" />
+      <RadioButton Content="2"  Click="OnChangePeriod" x:Name="rbDbg3"/>
       <RadioButton Content="10" Click="OnChangePeriod" IsChecked="True"/>
       <RadioButton Content="15" Click="OnChangePeriod" />
-      <RadioButton Content="20" Click="OnChangePeriod" />
-      <CheckBox    Content="Say Min"                   x:Name="chSayMinutes" />
+      <RadioButton Content="30" Click="OnChangePeriod" />
     </StackPanel>
 
     <ProgressBar x:Name="pbBattery" Value="08"   VerticalAlignment="Top" HorizontalAlignment="Left" Margin="16 8" Width="130" Height="50" Foreground="#005" >

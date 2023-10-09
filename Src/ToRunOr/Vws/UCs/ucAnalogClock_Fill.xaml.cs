@@ -48,8 +48,7 @@ namespace ToRunOr.Vws.UCs
         pb1.Value = (now.Minute % playPeriodInMin * 60) + now.Second;
         swTime.Text = $"{TimeSpan.FromSeconds(pb1.Maximum-pb1.Value):m\\:ss}";
 
-        if (!_isTalking)
-          pb1.Foreground = secondsLeft < 60 ? new Windows.UI.Xaml.Media.SolidColorBrush(secondsLeft % 2 == 0 ? Windows.UI.Colors.Red : Windows.UI.Colors.DarkOrange) : new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkMagenta);
+        //tmi: if (!_isTalking)         //  pb1.Foreground = secondsLeft < 60 ? new Windows.UI.Xaml.Media.SolidColorBrush(secondsLeft % 2 == 0 ? Windows.UI.Colors.Red : Windows.UI.Colors.DarkOrange) : new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.DarkMagenta);
 
         if (now.Second > audioWindowSec || _isTalking)
           return;
