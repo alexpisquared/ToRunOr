@@ -32,7 +32,7 @@ namespace ToRunOr.Vws.UCs
       this.InitializeComponent();
       if (Windows.ApplicationModel.DesignMode.DesignModeEnabled) return;
 
-      _timer.Tick += onTick;
+      //_timer.Tick += onTick;
 
       Application.Current.Suspending += OnSuspending;
       Application.Current.Resuming += OnResuming;
