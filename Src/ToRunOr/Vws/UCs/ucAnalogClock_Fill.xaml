@@ -146,10 +146,11 @@
       <TextBlock Text="18:32" x:Name="swTime" Foreground="#ff0" Margin="2 0 2 1" FontFamily="Consolas" FontWeight="ExtraBlack"  />
     </Viewbox>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Padding="20">
-      <CheckBox    Content="Say Minutes"               x:Name="chSayMinutes" />
+      <CheckBox    Content="Say Minutes"               x:Name="chSayMinutes" Margin="0 0 30 0"/>
       <RadioButton Content="2"  Click="OnChangePeriod" x:Name="rbDbg3"/>
       <RadioButton Content="10" Click="OnChangePeriod" IsChecked="True"/>
       <RadioButton Content="15" Click="OnChangePeriod" />
+      <RadioButton Content="20" Click="OnChangePeriod" />
       <RadioButton Content="30" Click="OnChangePeriod" />
     </StackPanel>
 
